@@ -4,6 +4,47 @@ import React, { useState, useEffect, useRef } from 'react';
 import LightRays from './LightRays';
 import Image from 'next/image';
 
+function AutoPlayVideo() {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+            video.play().catch(() => {});
+          } else {
+            video.pause();
+          }
+        });
+      },
+      {
+        threshold: [0.5],
+      }
+    );
+
+    observer.observe(video);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  return (
+    <video
+      ref={videoRef}
+      src="/video/Teaser.webm"
+      muted
+      loop
+      playsInline
+      className="w-screen"
+    />
+  );
+}
+
 const Hero = () => {
   return <>
     <div className='w-full h-[80vh] relative bg-black overflow-x-hidden'>
@@ -37,6 +78,7 @@ const Hero = () => {
         <span className='text-white opacity-75'>VSSUT</span>
       </h1>
     </div>
+    <AutoPlayVideo />
   </>
 }
 
