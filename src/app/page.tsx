@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import SpeakerHome from "@/components/SpeakerHome";
 import { SponsorUs } from "@/components/SponsorUs";
 import PastEvents from "./past-events/page";
-import SponsorCarousel from "../../../PastSponsors";
+import SponsorCarousel from "../components/PastSponsors";
 
 export default function Index() {
   return (<>
