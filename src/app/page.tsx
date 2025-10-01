@@ -7,24 +7,22 @@ import { SponsorUs } from "@/components/SponsorUs";
 export default function Index() {
   return (<>
     <Hero />
-    <div className="relative mt-[50vh] bg-red z-[100]">
-      <h1>TEDxVSSUT</h1>
-      <h1>What is ted x</h1>
-      <p>reply</p>
+    <h1>TEDxVSSUT</h1>
+    <h1>What is ted x</h1>
+    <p>reply</p>
 
     <SpeakerHome/>
 
-      <h1>Venue</h1>
-      <p>content</p>
+    <h1>Venue</h1>
+    <p>content</p>
 
-      {Array(2).map(i =>
-        <CrewCard />
-      )}
+    {Array(2).map(i =>
+      <CrewCard />
+    )}
 
-      <SponsorUs />
+    <SponsorUs />
 
-      <h1>FAQ</h1>
-      <p>faqs</p>
-    </div>
+    <h1>FAQ</h1>
+    <p>faqs</p>
   </>)
 }
