@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import SpeakerCard from './SpeakerCard'
 import { GrFormNext, GrFormPrevious } from 'react-icons/gr'
 
 
@@ -44,6 +43,12 @@ const SpeakersSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [direction, setDirection] = useState(0) 
   const [activeIndex, setActiveIndex] = useState(1)
+  const imageVariants = {
+    center: { x: '', zIndex: 5 },
+    left: { x: '', zIndex: 2 },
+    right: { x: '', zIndex: 1 },
+  }
+  
   const handlePrev = () => {
     setDirection(-1)
     setCurrentIndex((prev) => (prev - 1 + speakers.length) % speakers.length)
@@ -68,8 +73,6 @@ const SpeakersSection = () => {
 
   return (
     <section className="bg-black text-white py-8 md:py-10 font-sans overflow-hidden lg:h-screen relative">
-      {/* Glow Circle */}
-      <div className="absolute bg-red-700/70 w-[300px] h-[300px] md:w-[400px] md:h-[400px] -right-[150px] -top-[150px] blur-[200px] mix-blend-screen rounded-full"></div>
 
       <div className="container mx-auto text-center px-4 relative">
         {/* Title */}
@@ -80,7 +83,7 @@ const SpeakersSection = () => {
         {/* Subtitle */}
         <p className="max-w-2xl md:max-w-4xl mx-auto mt-6 md:mt-10 text-gray-400 text-xs sm:text-sm md:text-base leading-relaxed">
           Visionaries, innovators, and changemakers—all set to take the stage at
-          TEDxVSSUT 2024. Get ready to hear from an inspiring lineup of speakers
+          TEDxVSSUT 2025. Get ready to hear from an inspiring lineup of speakers
           who will share ideas that challenge perspectives and spark
           transformation.
         </p>
@@ -95,23 +98,71 @@ const SpeakersSection = () => {
             exit={{ x: direction > 0 ? -300 : 300, opacity: 0 }}
             transition={{ duration: 0.5, ease: 'easeInOut' }}
           >
-            {visibleSpeakers.map((speaker, i) => (
-              <div
-                className="min-w-[260px] min-h-[300px] md:min-w-[180px] md:min-h-[220px] lg:min-w-[220px] lg:min-h-[260px] flex-shrink-0"
-                key={speaker.id}
-              >
-                <SpeakerCard
-                  key={i}
-                  name={speaker.name}
-                  title={speaker.title}
-                  imageUrl={speaker.imageUrl}
-                  isActive={activeIndex === i} 
-                  handleHover={() => setActiveIndex(i)}
-                  currentIndex={currentIndex}
-                  pos={i}
-                />
-              </div>
-            ))}
+            {visibleSpeakers.map((speaker, i) => {
+              const getPos =
+                i == currentIndex
+                  ? 'center'
+                  : i > currentIndex
+                  ? 'right'
+                  : 'left'
+              const isActive = activeIndex === i
+              return (
+                <div
+                  className="min-w-[260px] min-h-[300px] md:min-w-[180px] md:min-h-[220px] lg:min-w-[220px] lg:min-h-[260px] flex-shrink-0"
+                  key={speaker.id}
+                >
+                  <motion.div
+                    className={`relative min-w-[40%] sm:min-w-[45%] md:min-w-[50%] lg:w-[320px] xl:w-[350px] h-[300px] sm:h-[340px] md:h-[360px] lg:h-[400px] shrink-0 overflow-hidden rounded-xl transform transition-all duration-500 ease-in-out hover:border border-gray-300 ${
+                      isActive ? 'scale-105' : 'scale-90 opacity-60'
+                    }`}
+                    initial={{
+                      scale: 0.5,
+                      opacity: 0,
+                    }}
+                    onMouseEnter={() => setActiveIndex(i)}
+                    variants={imageVariants}
+                    animate={{
+                      scale: 1,
+                      opacity: 1,
+                    }}
+                  >
+                    {/* Speaker Image */}
+                    <img
+                      src={speaker.imageUrl}
+                      alt={speaker.name}
+                      className={`w-full h-full object-cover transition-all duration-500 ${
+                        isActive
+                          ? ''
+                          : getPos === 'right'
+                          ? 'filter grayscale '
+                          : 'grayscale'
+                      }`}
+                    />
+
+                    {/* Overlay Gradient */}
+                    <div className="absolute bottom-0 left-0 right-0 h-1/3 sm:h-1/2 bg-gradient-to-t from-black to-transparent"></div>
+
+                    <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-3 md:p-2 lg:p-6 flex justify-between md:gap-2 -gap-1  items-end text-white">
+                      <div className="text-left">
+                        <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-snug">
+                          {speaker.name}
+                        </h3>
+                        <p className="text-[10px] sm:text-xs md:text-sm  text-gray-400">
+                          {speaker.title}
+                        </p>
+                      </div>
+                      <div
+                        className={`h-7 w-7 sm:h-8 sm:w-8 md:h-9 md:w-9 lg:h-9 lg:w-9 rounded-full flex items-center justify-center transition-colors duration-300 ${
+                          isActive ? 'bg-red-600' : 'bg-gray-500'
+                        }`}
+                      >
+                        <GrFormNext className="text-white text-sm sm:text-base md:text-lg lg:text-xl" />
+                      </div>
+                    </div>
+                  </motion.div>
+                </div>
+              )
+            })}
           </motion.div>
         </div>
 
@@ -126,7 +177,50 @@ const SpeakersSection = () => {
               transition={{ duration: 0.5, ease: 'easeInOut' }}
               className="w-full h-full flex justify-center items-center"
             >
-              <SpeakerCard
+              <div
+                className="min-w-[260px] min-h-[300px] md:min-w-[180px] md:min-h-[220px] lg:min-w-[220px] lg:min-h-[260px] flex-shrink-0"
+                key={speakers[currentIndex].id}
+              >
+                <motion.div
+                  className={`relative min-w-[40%] sm:min-w-[45%] md:min-w-[50%] lg:w-[320px] xl:w-[350px] h-[300px] sm:h-[340px] md:h-[360px] lg:h-[400px] shrink-0 overflow-hidden rounded-xl transform transition-all duration-500 ease-in-out scale-105 border border-gray-300`}
+                  initial={{
+                    scale: 0.5,
+                    opacity: 0,
+                  }}
+                  variants={imageVariants}
+                  animate={{
+                    scale: 1,
+                    opacity: 1,
+                  }}
+                >
+                  {/* Speaker Image */}
+                  <img
+                    src={speakers[currentIndex].imageUrl}
+                    alt={speakers[currentIndex].name}
+                    className={`w-full h-full object-cover transition-all duration-500`}
+                  />
+
+                  {/* Overlay Gradient */}
+                  <div className="absolute bottom-0 left-0 right-0 h-1/3 sm:h-1/2 bg-gradient-to-t from-black to-transparent"></div>
+
+                  <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-3 md:p-4 lg:p-6 flex justify-between md:gap-4 -gap-1  items-end text-white">
+                    <div className="text-left">
+                      <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-snug">
+                        {speakers[currentIndex].name}
+                      </h3>
+                      <p className="text-[10px] sm:text-xs md:text-sm  text-gray-400">
+                        {speakers[currentIndex].title}
+                      </p>
+                    </div>
+                    <div
+                      className={`h-7 w-7 sm:h-8 sm:w-8 md:h-9 md:w-9 rounded-full flex items-center justify-center transition-colors duration-300 bg-red-600`}
+                    >
+                      <GrFormNext className="text-white text-sm sm:text-base md:text-lg lg:text-xl" />
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+              {/* <SpeakerCard
                 key={speakers[currentIndex].id}
                 name={speakers[currentIndex].name}
                 title={speakers[currentIndex].title}
@@ -135,13 +229,13 @@ const SpeakersSection = () => {
                 handleHover={() => {}}
                 currentIndex={currentIndex}
                 pos={currentIndex}
-              />
+              /> */}
             </motion.div>
           </AnimatePresence>
         </div>
 
         {/* Navigation */}
-        <div className="flex justify-center items-center gap-4 mt-6 md:mt-8">
+        <div className="flex justify-center items-center gap-4 mt-6 md:mt-8 md:hidden">
           <button
             onClick={handlePrev}
             className="h-9 w-9 sm:h-10 sm:w-10 md:h-12 md:w-12 border border-gray-600 rounded-full flex items-center justify-center text-gray-400 hover:bg-gray-800 hover:text-white transition-colors"
