@@ -1,5 +1,5 @@
 import { CrewCard } from "@/components/CrewCard";
-import { SpeakerHome } from "@/components/SpeakerHome";
+import SpeakerHome  from "@/components/SpeakerHome";
 import { SponsorUs } from "@/components/SponsorUs";
 
 export default function Index() {
@@ -8,9 +8,7 @@ export default function Index() {
     <h1>What is ted x</h1>
     <p>reply</p>
 
-    {Array(5).map(i =>
-      <SpeakerHome />
-    )}
+    <SpeakerHome/>
 
     <h1>Venue</h1>
     <p>content</p>
