@@ -4,7 +4,6 @@ import Hero from "@/components/Hero";
 import SpeakerHome from "@/components/SpeakerHome";
 import { SponsorUs } from "@/components/SponsorUs";
 import PastEvents from "./past-events/page";
-import SponsorCarousel from "../components/PastSponsors";
 
 export default function Index() {
   return (<>
@@ -26,9 +25,5 @@ export default function Index() {
 
     <h1>FAQ</h1>
     <p>faqs</p>
-    <div className="w-full">
-      <PastEvents />
-    </div>
-    <SponsorCarousel />
   </>)
 }
