@@ -37,7 +37,7 @@ const crewMembers: crewMembers[] = [
       instagram: 'https://instagram.com/arabmehtab',
       twitter: 'https://x.com/arabmehtab',
       linkedin: 'https://linkedin.com/in/arabmehtab',
-      github: '', // leave empty if not needed
+      github: '', 
     },
   },
   {
@@ -82,7 +82,7 @@ const crewMembers: crewMembers[] = [
       instagram: '',
       twitter: 'https://x.com/johnsmith',
       linkedin: 'https://linkedin.com/in/johnsmith',
-      github: 'https://github.com/johnsmith', // ✅ tech → GitHub included
+      github: 'https://github.com/johnsmith',
     },
   },
   {
