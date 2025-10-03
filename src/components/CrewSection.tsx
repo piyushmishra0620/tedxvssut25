@@ -10,7 +10,7 @@ import {
   BsTwitterX,
 } from 'react-icons/bs'
 
-interface crewMembers {
+export interface crewMembers {
   id: number
   name: string
   role: string
@@ -115,6 +115,17 @@ export const CrewCard: React.FC<CrewCardProps> = ({ member }) =>  {
                  bg-black rounded-lg overflow-y-hidden flex-shrink-0 hover:border-1 border-gray-300 "
        whileHover={{ scale: 1.05 }}
        transition={{ duration: 0.3 }}
+       initial={{scale:0.6 , opacity:0, y:100}}
+       whileInView={{scale:1, opacity:1, y:0 , 
+        transition: {
+          type:"spring",
+          stiffness:100,
+          damping:10,
+          mass:1,
+          duration:0.5
+          
+        }}}
+       viewport={{once:true, amount:0.2}}
      >
        <img
          src={member.imageUrl}
