@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Sponsorship() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-white p-5">
+    <div className="flex min-w-screen items-center justify-center bg-white p-5">
       <section className="mx-auto w-full max-w-[900px] border-2 border-black bg-[#1c1c1c] px-10 py-[60px] text-center">
         <h2 className="mb-5 mt-0 text-[2rem] font-bold uppercase tracking-[4px]">
           <span className="text-[#e62b1e]">SPONSOR</span>{' '}
@@ -15,7 +15,7 @@ export default function Sponsorship() {
         
         <Link 
           href="#sponsorship-brochure"
-          className="inline-block cursor-pointer border border-[#c0c0c0] bg-[#f0f0f0] px-7 py-[14px] text-base font-semibold text-[#212121] no-underline transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-white"
+          className="inline-block cursor-pointer border border-[#c0c0c0] bg-[#f0f0f0] px-7 py-[14px] text-base font-semibold text-[#212121] no-underline transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-white rounded-full"
         >
           Sponsorship Brochure
         </Link>
