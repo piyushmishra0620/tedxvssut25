@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import React, { useState } from "react";
@@ -31,8 +29,6 @@ const SurveyForm: React.FC = () => {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
-
-    // Rating ko string se number mein convert karne ke liye special handling
     const finalValue = name === "rating" ? parseInt(value, 10) : value;
 
     setFormData((prevData) => ({
@@ -45,27 +41,24 @@ const SurveyForm: React.FC = () => {
     e.preventDefault();
     console.log("Survey Form Data:", formData);
     alert("Thank you for your feedback!");
-    // Yahan par aap data ko backend API par bhej sakte hain
   };
 
   return (
-    // Section ka background dark
-    <section className="py-16 bg-black text-white">
+    <section className="py-16 bg-[#000000] text-white">
       <div className="container mx-auto px-6 md:px-12">
         <h2 className="text-3xl font-bold text-center mb-8 uppercase">
-          <span className="text-white">ATTENDEE</span>{" "}
-          <span className="text-red-500">SURVEY</span>
-        </h2>{" "}
-        {/* Title red */}
+          <span className="text-[#FFFFFF]">ATTENDEE</span>{" "}
+          <span className="text-[#E62B1E]">SURVEY</span>
+        </h2>
         <form
           onSubmit={handleSubmit}
-          className="max-w-2xl mx-auto bg-black p-8 rounded-lg shadow-lg space-y-6 border border-red-800"
+          className="max-w-2xl mx-auto bg-[#000000] p-8 rounded-lg shadow-lg space-y-6 border border-[#E62B1E]"
         >
           {/* Name Field */}
           <div>
             <label
               htmlFor="name"
-              className="block text-gray-200 font-semibold mb-2"
+              className="block text-[#F5F5F5] font-semibold mb-2"
             >
               Name
             </label>
@@ -75,7 +68,7 @@ const SurveyForm: React.FC = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-700 rounded-md bg-black text-white focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="w-full px-4 py-2 border border-[#6D6D6D] rounded-md bg-[#000000] text-white focus:outline-none focus:ring-2 focus:ring-[#E62B1E]"
               required
             />
           </div>
@@ -84,7 +77,7 @@ const SurveyForm: React.FC = () => {
           <div>
             <label
               htmlFor="email"
-              className="block text-gray-200 font-semibold mb-2"
+              className="block text-[#F5F5F5] font-semibold mb-2"
             >
               Email Address
             </label>
@@ -94,7 +87,7 @@ const SurveyForm: React.FC = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-700 rounded-md bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="w-full px-4 py-2 border border-[#6D6D6D] rounded-md bg-[#333333] text-white focus:outline-none focus:ring-2 focus:ring-[#E62B1E]"
               required
             />
           </div>
@@ -103,7 +96,7 @@ const SurveyForm: React.FC = () => {
           <div>
             <label
               htmlFor="howDidYouHear"
-              className="block text-gray-200 font-semibold mb-2"
+              className="block text-[#F5F5F5] font-semibold mb-2"
             >
               How did you hear about this event?
             </label>
@@ -113,13 +106,13 @@ const SurveyForm: React.FC = () => {
               name="howDidYouHear"
               value={formData.howDidYouHear}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-700 rounded-md bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="w-full px-4 py-2 border border-[#6D6D6D] rounded-md bg-[#333333] text-white focus:outline-none focus:ring-2 focus:ring-[#E62B1E]"
             />
           </div>
 
           {/* Is this your first TEDx event? */}
           <div className="flex flex-col">
-            <label className="block text-gray-200 font-semibold mb-2">
+            <label className="block text-[#F5F5F5] font-semibold mb-2">
               Is this your first TEDx event?
             </label>
             <div className="flex gap-4">
@@ -129,18 +122,17 @@ const SurveyForm: React.FC = () => {
                   name="isFirstEvent"
                   value="Yes"
                   onChange={handleChange}
-                  className="mr-2 accent-red-500"
+                  className="mr-2 accent-[#E62B1E]"
                 />
                 Yes
-              </label>{" "}
-              {/* Radio buttons red accent */}
+              </label>
               <label>
                 <input
                   type="radio"
                   name="isFirstEvent"
                   value="No"
                   onChange={handleChange}
-                  className="mr-2 accent-red-500"
+                  className="mr-2 accent-[#E62B1E]"
                 />
                 No
               </label>
@@ -151,7 +143,7 @@ const SurveyForm: React.FC = () => {
           <div>
             <label
               htmlFor="favoriteTalk"
-              className="block text-gray-200 font-semibold mb-2"
+              className="block text-[#F5F5F5] font-semibold mb-2"
             >
               Which talk you liked the most?
             </label>
@@ -161,7 +153,7 @@ const SurveyForm: React.FC = () => {
               name="favoriteTalk"
               value={formData.favoriteTalk}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-700 rounded-md bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="w-full px-4 py-2 border border-[#6D6D6D] rounded-md bg-[#333333] text-white focus:outline-none focus:ring-2 focus:ring-[#E62B1E]"
             />
           </div>
 
@@ -169,7 +161,7 @@ const SurveyForm: React.FC = () => {
           <div>
             <label
               htmlFor="rating"
-              className="block text-gray-200 font-semibold mb-2"
+              className="block text-[#F5F5F5] font-semibold mb-2"
             >
               Rate the event (1=Poor, 10=Excellent)
             </label>
@@ -183,13 +175,12 @@ const SurveyForm: React.FC = () => {
                 max="10"
                 value={formData.rating}
                 onChange={handleChange}
-                className="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-red-600" // Slider background dark, accent red
+                className="w-full h-2 bg-[#333333] rounded-lg appearance-none cursor-pointer accent-[#E62B1E]"
               />
               <span>10</span>
-              <span className="font-bold text-red-500 w-8 text-center">
+              <span className="font-bold text-[#E62B1E] w-8 text-center">
                 {formData.rating}
-              </span>{" "}
-              {/* Rating value red */}
+              </span>
             </div>
           </div>
 
@@ -197,7 +188,7 @@ const SurveyForm: React.FC = () => {
           <div>
             <label
               htmlFor="feedback"
-              className="block text-gray-200 font-semibold mb-2"
+              className="block text-[#F5F5F5] font-semibold mb-2"
             >
               Overall Feedback
             </label>
@@ -207,13 +198,13 @@ const SurveyForm: React.FC = () => {
               rows={4}
               value={formData.feedback}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-700 rounded-md bg-black text-white focus:outline-none focus:ring-2 focus:ring-red-500 resize-none"
+              className="w-full px-4 py-2 border border-[#6D6D6D] rounded-md bg-[#000000] text-white focus:outline-none focus:ring-2 focus:ring-[#E62B1E] resize-none"
             ></textarea>
           </div>
 
           {/* Would you like to join us in the next edition? */}
           <div className="flex flex-col">
-            <label className="block text-gray-200 font-semibold mb-2">
+            <label className="block text-[#F5F5F5] font-semibold mb-2">
               Would you like to join us in the next edition of TEDxVSSUT?
             </label>
             <div className="flex gap-4">
@@ -223,7 +214,7 @@ const SurveyForm: React.FC = () => {
                   name="joinNextEdition"
                   value="Yes"
                   onChange={handleChange}
-                  className="mr-2 accent-red-500"
+                  className="mr-2 accent-[#E62B1E]"
                 />
                 Yes
               </label>
@@ -233,7 +224,7 @@ const SurveyForm: React.FC = () => {
                   name="joinNextEdition"
                   value="No"
                   onChange={handleChange}
-                  className="mr-2 accent-red-500"
+                  className="mr-2 accent-[#E62B1E]"
                 />
                 No
               </label>
@@ -244,7 +235,7 @@ const SurveyForm: React.FC = () => {
           <div>
             <button
               type="submit"
-              className="w-full bg-red-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-red-700 transition duration-300" // Button red
+              className="w-full bg-[#E62B1E] text-white font-bold py-3 px-6 rounded-lg hover:bg-[#B22222] transition duration-300"
             >
               Submit Feedback
             </button>
