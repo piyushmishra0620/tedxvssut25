@@ -21,12 +21,12 @@ export const SpeakerCard = (props: SpeakerCardProps) => {
     // Animate on mount
     useEffect(() => {
         if (cardRef.current) {
-            cardRef.current.classList.remove("opacity-0");
             gsap.fromTo(
                 ".card",
-                { opacity: 0, x: -35 },
-                { opacity: 1, x: 0, stagger: 0.04, ease: "power3.out" }
+                { opacity: 0, x: -75 },
+                { opacity: 1, x: 0, stagger: 0.16, ease: "power3.out" }
             );
+            cardRef.current.classList.remove("opacity-0");
         }
     }, []); // empty dependency array ensures it runs once
 
