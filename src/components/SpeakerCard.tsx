@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ChevronRight,X } from "lucide-react";
+import { ChevronRight, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import {gsap} from "gsap";
 
 type SpeakerCardProps = {
     id?: string;
@@ -15,7 +16,9 @@ type SpeakerCardProps = {
 
 export const SpeakerCard = (props: SpeakerCardProps) => {
     const [open, setOpen] = useState(false);
-
+    window.addEventListener("load",()=>{
+        gsap.fromTo(".card",{opacity:0,x:-35},{opacity:1,x:0,stagger:0.04,ease:"power3.out"});
+    });
     useEffect(() => {
         if (open) {
             document.body.classList.add('overflow-hidden');
@@ -30,7 +33,7 @@ export const SpeakerCard = (props: SpeakerCardProps) => {
                 <motion.div
                     layoutId={`card-${props.id}`}
                     transition={{ type: "spring", stiffness: 250, damping: 30, velocity: 80 }}
-                    className="z-20 relative basis-[450px] shrink-1 grow-1  h-[500px] rounded-[10px] border-2 border-gray-300  max-md:h-[270px] drop-shadow-md drop-shadow-gray-600 cursor-pointer"
+                    className="card z-20 relative basis-[450px] shrink-1 grow-1  h-[500px] rounded-[10px] border-2 border-gray-300  max-md:h-[270px] drop-shadow-md drop-shadow-gray-600 cursor-pointer"
                     onClick={() => setOpen(true)}
                 >
                     <motion.div
@@ -106,7 +109,7 @@ export const SpeakerCard = (props: SpeakerCardProps) => {
                                 </motion.div>
                             </motion.div>
                             <motion.div className="absolute inset-0 flex flex-row justify-end-safe items-start pointer-events-auto mr-2 mt-2">
-                                <motion.button className="rounded-full p-[6px] bg-black/40 backdrop-blur-[14px] cursor-pointer" onClick={()=>setOpen(false)}><X className="text-white"/></motion.button>
+                                <motion.button className="rounded-full p-[6px] bg-black/40 backdrop-blur-[14px] cursor-pointer" onClick={() => setOpen(false)}><X className="text-white" /></motion.button>
                             </motion.div>
                         </motion.div>
                     </motion.div>
