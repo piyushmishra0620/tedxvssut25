@@ -22,8 +22,8 @@ export const SpeakerCard = (props: SpeakerCardProps) => {
         if (cardRef.current) {
             gsap.fromTo(
                 ".card",
-                { opacity: 0, x: -75 },
-                { opacity: 1, x: 0, stagger: 0.06, ease: "power3.out" }
+                { opacity: 0, y: 20 },
+                { opacity: 1, y: 0, stagger: 0.1, ease: "power3.out" }
             );
             cardRef.current.classList.remove("opacity-0");
         }
