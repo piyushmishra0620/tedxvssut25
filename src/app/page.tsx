@@ -1,5 +1,4 @@
 import { CrewCard } from "@/components/CrewCard";
-import { SpeakerHomeWrapper } from "@/components/SpeakerHomeWrapper";
 import { SponsorUs } from "@/components/SponsorUs";
 
 
@@ -11,7 +10,6 @@ export default function Index() {
       <p>reply</p>
       <h1>Venue</h1>
       <p>content</p>
-      <SpeakerHomeWrapper/>
       <SponsorUs />
 
       <h1>FAQ</h1>

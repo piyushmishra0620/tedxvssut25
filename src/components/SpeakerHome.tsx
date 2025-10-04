@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { ChevronRight } from "lucide-react";
+import { useState, useEffect } from "react";
+import { ChevronRight,X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 type SpeakerHomeProps = {
@@ -16,13 +16,21 @@ type SpeakerHomeProps = {
 export const SpeakerHome = (props: SpeakerHomeProps) => {
     const [open, setOpen] = useState(false);
 
+    useEffect(() => {
+        if (open) {
+            document.body.classList.add('overflow-hidden');
+        } else {
+            document.body.classList.remove('overflow-hidden');
+        }
+    }, [open]);
+
     return (
         <>
             <AnimatePresence>
                 <motion.div
                     layoutId={`card-${props.id}`}
-                    transition={{ type: "spring", stiffness: 250, damping: 30, velocity:80 }}
-                    className="z-20 relative w-[470px] h-[500px] rounded-[10px] border-2 border-gray-300 max-md:w-[230px] max-md:h-[270px] drop-shadow-md drop-shadow-gray-600 cursor-pointer"
+                    transition={{ type: "spring", stiffness: 250, damping: 30, velocity: 80 }}
+                    className="z-20 relative basis-[450px] shrink-1 grow-1  h-[500px] rounded-[10px] border-2 border-gray-300  max-md:h-[270px] drop-shadow-md drop-shadow-gray-600 cursor-pointer"
                     onClick={() => setOpen(true)}
                 >
                     <motion.div
@@ -64,7 +72,7 @@ export const SpeakerHome = (props: SpeakerHomeProps) => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        transition={{ duration: 0.2 , ease:"easeOut" }}
+                        transition={{ duration: 0.2, ease: "easeOut" }}
                         className="fixed inset-0 flex justify-center items-center z-40 bg-black/40 backdrop-blur-[5px]"
                         onClick={() => setOpen(false)}
                     >
@@ -91,11 +99,14 @@ export const SpeakerHome = (props: SpeakerHomeProps) => {
                                         {props.title}
                                     </motion.p>
                                     <motion.p
-                                        className="ml-3 mt-3 text-[18px] text-white/80 mb-[7px]"
+                                        className="ml-3 mt-3 h-fit w-fit overflow-y-auto scrollbar-hide text-[18px] text-white/80 mb-[7px]"
                                     >
                                         {props.bio}
                                     </motion.p>
                                 </motion.div>
+                            </motion.div>
+                            <motion.div className="absolute inset-0 flex flex-row justify-end-safe items-start pointer-events-auto mr-2 mt-2">
+                                <motion.button className="rounded-full p-[6px] bg-black/40 backdrop-blur-[14px] cursor-pointer" onClick={()=>setOpen(false)}><X className="text-white"/></motion.button>
                             </motion.div>
                         </motion.div>
                     </motion.div>
@@ -104,3 +115,4 @@ export const SpeakerHome = (props: SpeakerHomeProps) => {
         </>
     );
 };
+
