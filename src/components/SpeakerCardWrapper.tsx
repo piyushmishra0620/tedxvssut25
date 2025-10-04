@@ -13,6 +13,7 @@ type SpeakerCardProps = {
     link?: string,
     children?: React.ReactNode
 };
+
 const arr: SpeakerCardProps[] = [
     {
         key: 0,
