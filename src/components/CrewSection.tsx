@@ -248,7 +248,7 @@ const CrewSection = () => {
           are making TEDxVSSUT 2025 success.
         </p>
 
-        <div className="w-[80%] max-w-[1400px] mx-auto px-4 sm:px-6 md:px-30 flex overflow-x-auto mt-10 sm:mt-16 mb-6 sm:mb-8  relative py-5 lg:custom-scrollbar-lg md:custom-scrollbar-md custom-scrollbar gap-3 sm:gap-4 md:gap-6 lg:gap-8 ">
+        <div className="w-[80%] max-w-[1400px] mx-auto px-4 sm:px-6 md:px-30 flex overflow-x-auto mt-10 sm:mt-16 mb-6 sm:mb-8  relative py-5 overflow-y-hidden custom-scrollbar gap-3 sm:gap-4 md:gap-6 lg:gap-8 ">
           {crewMembers.map((crew, i) => (
             <CrewCard key={i} member={crew} />
           ))}
