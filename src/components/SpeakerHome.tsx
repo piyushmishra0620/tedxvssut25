@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-
-=======
 'use client'
 
 import { useState } from 'react'
@@ -255,5 +251,4 @@ const SpeakersSection = () => {
   )
 }
 
-export default SpeakersSection
->>>>>>> a2451ad30066ad2913ce3c9477b249a031d6b759
+export default SpeakersSection;

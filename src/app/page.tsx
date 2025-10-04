@@ -9,7 +9,8 @@ import InfoSection from "@/components/InfoSection";
 
 
 export default function Index() {
-  return (<>
+  return (
+    <>
     <Hero />
     <InfoSection />
 
@@ -24,5 +25,6 @@ export default function Index() {
 
     <h1>FAQ</h1>
     <p>faqs</p>
-  </>)
+  </>
+  )
 }
