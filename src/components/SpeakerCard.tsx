@@ -18,19 +18,17 @@ export const SpeakerCard = (props: SpeakerCardProps) => {
     const cardRef = useRef<HTMLDivElement>(null);
     const [open, setOpen] = useState(false);
 
-    // Animate on mount
     useEffect(() => {
         if (cardRef.current) {
             gsap.fromTo(
                 ".card",
                 { opacity: 0, x: -75 },
-                { opacity: 1, x: 0, stagger: 0.16, ease: "power3.out" }
+                { opacity: 1, x: 0, stagger: 0.06, ease: "power3.out" }
             );
             cardRef.current.classList.remove("opacity-0");
         }
-    }, []); // empty dependency array ensures it runs once
+    }, []); 
 
-    // Lock scroll when modal is open
     useEffect(() => {
         if (open) {
             document.body.classList.add("overflow-hidden");
