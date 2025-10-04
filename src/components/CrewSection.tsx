@@ -10,7 +10,7 @@ import {
   BsTwitterX,
 } from 'react-icons/bs'
 
-interface crewMembers {
+export interface crewMembers {
   id: number
   name: string
   role: string
@@ -115,6 +115,17 @@ export const CrewCard: React.FC<CrewCardProps> = ({ member }) =>  {
                  bg-black rounded-lg overflow-y-hidden flex-shrink-0 hover:border-1 border-gray-300 "
        whileHover={{ scale: 1.05 }}
        transition={{ duration: 0.3 }}
+       initial={{scale:0.6 , opacity:0, y:100}}
+       whileInView={{scale:1, opacity:1, y:0 , 
+        transition: {
+          type:"spring",
+          stiffness:100,
+          damping:10,
+          mass:1,
+          duration:0.5
+          
+        }}}
+       viewport={{once:true, amount:0.2}}
      >
        <img
          src={member.imageUrl}
@@ -237,7 +248,7 @@ const CrewSection = () => {
           are making TEDxVSSUT 2025 success.
         </p>
 
-        <div className="w-[80%] max-w-[1400px] mx-auto px-4 sm:px-6 md:px-30 flex overflow-x-auto mt-10 sm:mt-16 mb-6 sm:mb-8  relative py-5 lg:custom-scrollbar-lg md:custom-scrollbar-md custom-scrollbar gap-3 sm:gap-4 md:gap-6 lg:gap-8 ">
+        <div className="w-[80%] max-w-[1400px] mx-auto px-4 sm:px-6 md:px-30 flex overflow-x-auto mt-10 sm:mt-16 mb-6 sm:mb-8  relative py-5 overflow-y-hidden custom-scrollbar gap-3 sm:gap-4 md:gap-6 lg:gap-8 ">
           {crewMembers.map((crew, i) => (
             <CrewCard key={i} member={crew} />
           ))}
