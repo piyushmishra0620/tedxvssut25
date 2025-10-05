@@ -6,7 +6,7 @@ import SpeakerHome from "@/components/SpeakerHome";
 import { SponsorUs } from "@/components/SponsorUs";
 import PastEvents from "./past-events/page";
 import InfoSection from "@/components/InfoSection";
-
+import Venue from "@/components/Venue"; 
 
 export default function Index() {
   return (
@@ -15,9 +15,8 @@ export default function Index() {
     <InfoSection />
 
     <SpeakerHome />
-
-    <h1>Venue</h1>
-    <p>content</p>
+    
+    <Venue />
 
     <CrewSection />
 
