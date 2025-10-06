@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export default function Sponsorship() {
   return (
-    <div className="flex min-w-screen items-center justify-center bg-white p-5">
-      <section className="mx-auto w-full max-w-[900px] border-2 border-black bg-[#1c1c1c] px-10 py-[60px] text-center">
+    <div className="flex min-w-screen items-center justify-center">
+      <section className="mx-auto w-full border-2 border-black bg-[#1c1c1c] px-10 py-[60px] text-center">
         <h2 className="mb-5 mt-0 text-[2rem] font-bold uppercase tracking-[4px]">
           <span className="text-[#e62b1e]">SPONSOR</span>{' '}
           <span className="text-white">US</span>
