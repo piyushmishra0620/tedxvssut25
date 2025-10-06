@@ -45,7 +45,8 @@ export const SpeakerCard = (props: SpeakerCardProps) => {
                     ref={cardRef}
                     layoutId={`card-${props.id}`}
                     transition={{ type: "spring", stiffness: 250, damping: 30, velocity: 80 }}
-                    className="z-20 card opacity-0 relative basis-[450px] shrink-1 grow-1 h-[500px] rounded-[10px] border-2 border-gray-300 max-md:h-[270px] drop-shadow-md drop-shadow-gray-600 cursor-pointer"
+                    className="z-20 card opacity-0 relative col-span-1 h-[400px] rounded-[10px] border-2 border-gray-300 max-[500px]:h-[250px] drop-shadow-md drop-shadow-gray-600 cursor-pointer"
+                    whileHover={{y:-10}}
                     onClick={() => setOpen(true)}
                 >
                     <motion.div className="relative w-full h-full overflow-hidden border-2 border-gray-300 rounded-[10px] outline-2 outline-gray-300">
@@ -85,7 +86,7 @@ export const SpeakerCard = (props: SpeakerCardProps) => {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.2, ease: "easeOut" }}
-                        className="fixed inset-0 flex justify-center items-center z-40 bg-black/40 backdrop-blur-[5px]"
+                        className="fixed inset-0 flex justify-center items-center z-[140] bg-black/40 backdrop-blur-[5px]"
                         onClick={() => setOpen(false)}
                     >
                         <motion.div
@@ -94,7 +95,7 @@ export const SpeakerCard = (props: SpeakerCardProps) => {
                             animate={{ opacity: 1, scale: 1 }}
                             exit={{ opacity: 0, scale: 0 }}
                             transition={{ type: "spring", stiffness: 250, damping: 30 }}
-                            className="z-50 w-[800px] h-[90%] max-[900px]:w-[90%] min-[1500px]:w-[70%] rounded-[10px] border-2 border-gray-300 drop-shadow-md drop-shadow-gray-600 cursor-pointer bg-white overflow-hidden"
+                            className="z-[150] w-[800px] h-[90%] max-[900px]:w-[90%] min-[1500px]:w-[70%] rounded-[10px] border-2 border-gray-300 drop-shadow-md drop-shadow-gray-600 cursor-pointer bg-white overflow-hidden"
                             onClick={(e) => e.stopPropagation()}
                         >
                             <motion.div className="relative w-full h-full overflow-hidden border-2 border-gray-300 outline-2 outline-gray-300 rounded-[10px]">
