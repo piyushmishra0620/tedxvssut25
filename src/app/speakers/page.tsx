@@ -1,4 +1,4 @@
-import { SpeakerCardWrapper } from "@/components/SpeakerCardWrapper";
+import {SpeakerCardWrapper} from "@/components/SpeakerCardWrapper";
 
 export default function Index() {
     return (

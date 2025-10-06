@@ -1,8 +1,9 @@
 "use client";
+
 import { SpeakerCard } from "@/components/SpeakerCard";
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Image from "next/image";
-import {motion,AnimatePresence} from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 type SpeakerCardProps = {
     key: number,
@@ -167,14 +168,13 @@ const arr: SpeakerCardProps[] = [
     },
 ];
 
-
 export const SpeakerCardWrapper = () => {
     return (
         <>
             <motion.div className="w-full h-fit flex flex-wrap gap-4  px-4 py-4 max-md:px-2 z-20">
-                    {arr.map((card, index) => (
-                        <SpeakerCard  key={card.key} id={card.id} name={card.name} bio={card.bio} title={card.title} link={card.link}>{card.children}</SpeakerCard>
-                    ))}
+                {arr.map((card, index) => (
+                    <SpeakerCard key={card.key} id={card.id} name={card.name} bio={card.bio} title={card.title} link={card.link}>{card.children}</SpeakerCard>
+                ))}
             </motion.div>
         </>
     )

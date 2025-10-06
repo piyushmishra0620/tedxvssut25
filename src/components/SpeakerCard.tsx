@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { ChevronRight, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { gsap } from "gsap";
+import {useGSAP} from '@gsap/react';
 
 type SpeakerCardProps = {
     id?: string;
@@ -18,16 +19,16 @@ export const SpeakerCard = (props: SpeakerCardProps) => {
     const cardRef = useRef<HTMLDivElement>(null);
     const [open, setOpen] = useState(false);
 
-    useEffect(() => {
+    useGSAP(() => {
         if (cardRef.current) {
             gsap.fromTo(
                 ".card",
                 { opacity: 0, y: 20 },
-                { opacity: 1, y: 0, stagger: 0.1, ease: "power3.out" }
+                { opacity: 1, y: 0, stagger: 0.06, ease: "power3.out" }
             );
             cardRef.current.classList.remove("opacity-0");
         }
-    }, []); 
+    }); 
 
     useEffect(() => {
         if (open) {
@@ -35,7 +36,7 @@ export const SpeakerCard = (props: SpeakerCardProps) => {
         } else {
             document.body.classList.remove("overflow-hidden");
         }
-    }, [open]);
+    },[]);
 
     return (
         <>
