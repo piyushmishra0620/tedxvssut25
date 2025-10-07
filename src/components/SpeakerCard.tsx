@@ -46,7 +46,7 @@ export const SpeakerCard = (props: SpeakerCardProps) => {
                     layoutId={`card-${props.id}`}
                     transition={{ type: "spring", stiffness: 250, damping: 30, velocity: 80 }}
                     className="z-20 card opacity-0 relative col-span-1 h-[400px] rounded-[10px] border-2 border-gray-300 max-[500px]:h-[250px] drop-shadow-md drop-shadow-gray-600 cursor-pointer"
-                    whileHover={{y:-10}}
+                    whileHover={{y:-20}}
                     onClick={() => setOpen(true)}
                 >
                     <motion.div className="relative w-full h-full overflow-hidden border-2 border-gray-300 rounded-[10px] outline-2 outline-gray-300">
