@@ -172,7 +172,7 @@ const SurveyForm: React.FC = () => {
       for (const key in formData) {
         formBody.append(key, formData[key as keyof IFormData].toString());
       }
-      await fetch(scriptURL, { method: "POST", body: formBody });
+      await fetch(scriptURL as string, { method: "POST", body: formBody });
       setShowSuccessModal(true);
       setFormData({
         email: "", name: "", howDidYouHear: "", isFirstEvent: "",
