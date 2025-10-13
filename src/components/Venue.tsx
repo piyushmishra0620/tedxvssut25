@@ -8,10 +8,10 @@ const EventVenue = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            EVENT <span className="text-red-600">VENUE</span>
-          </h1>
-          <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-light uppercase tracking-widest">
+            Event <span className="font-bold text-red-600">Venue</span>
+          </h2>
+          <p className="text-gray-400 mt-8 text-lg max-w-3xl mx-auto leading-relaxed">
             Experience TEDxVSSUT in a space designed for learning, collaboration,
             and inspiration. Our venue, the E-Learning Centre, combines state-of-the-art facilities with a vibrant atmosphere
           </p>
