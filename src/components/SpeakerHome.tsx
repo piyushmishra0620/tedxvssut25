@@ -73,7 +73,7 @@ const SpeakersSection = () => {
   const visibleSpeakers = getVisibleSpeakers()
 
   return (
-    <section className="bg-black text-white py-8 md:py-10 font-sans overflow-hidden lg:h-screen relative">
+    <section id='speakers' className="bg-black text-white py-8 md:py-10 font-sans overflow-hidden lg:h-screen relative">
       <div className="container mx-auto text-center px-4 relative">
         {/* Title */}
         <h2 className="text-2xl sm:text-3xl md:text-5xl font-light uppercase tracking-widest">

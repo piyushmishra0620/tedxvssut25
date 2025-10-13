@@ -4,7 +4,7 @@ import { Calendar, Clock, MapPin, Check } from 'lucide-react';
 const EventVenue = () => {
 
   return (
-    <div className="min-h-screen bg-black text-white px-6 py-12">
+    <div id="venue" className="min-h-screen bg-black text-white px-6 py-12">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">

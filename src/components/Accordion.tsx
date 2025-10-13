@@ -5,7 +5,7 @@ export default function Accordion({ title, answer }: {title: string, answer: str
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   return (
-    <div className="w-full mb-4 rounded-xl overflow-hidden backdrop-blur-md bg-gradient-to-r from-[#013C58]/30 to-[#00537A]/20 border border-[#A8E8F9]/20 shadow-lg transition-all duration-300 hover:shadow-xl hover:from-[#013C58]/40 hover:to-[#00537A]/30">
+    <div className="w-full mb-4 rounded-xl overflow-hidden backdrop-blur-md bg-gradient-to-r from-[#5d5d5d]/30 to-[#7f7f7f]/20 border border-[#ffffff]/20 shadow-lg transition-all duration-300 hover:shadow-xl hover:from-[#5f5f5f]/40 hover:to-[#7f7f7f]/20">
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
         className="flex justify-between items-center w-full text-xl md:text-2xl p-4 group"
