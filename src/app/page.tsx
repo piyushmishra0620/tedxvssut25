@@ -5,7 +5,8 @@ import Hero from "@/components/Hero";
 import SpeakerHome from "@/components/SpeakerHome";
 import Sponsorship from "@/components/Sponsorship";
 import InfoSection from "@/components/InfoSection";
-import Venue from "@/components/Venue"; 
+import Venue from "@/components/Venue";
+import FAQ from "@/components/FAQ";
 
 export default function Index() {
   return (
@@ -21,8 +22,7 @@ export default function Index() {
 
     <Sponsorship />
 
-    <h1>FAQ</h1>
-    <p>faqs</p>
+    <FAQ />
   </>
   )
 }
