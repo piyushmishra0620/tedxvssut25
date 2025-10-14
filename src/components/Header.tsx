@@ -43,7 +43,7 @@ const Header = () => {
                 ) }
             </ul>
 
-            <Link href="/contact" className="no-underline hidden md:block">
+            <Link href="/contact-us" className="no-underline hidden md:block">
                 <button className="bg-transparent text-[white] cursor-pointer font-bold px-[22px] py-2.5 rounded-[5px] border-2 border-solid border-[#E62B1E] hover:bg-[#E62B1E] hover:text-[white] transition-all">Contact Us</button>
             </Link>
         </nav>
