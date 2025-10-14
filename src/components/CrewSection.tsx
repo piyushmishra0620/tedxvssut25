@@ -24,7 +24,12 @@ export interface crewMembers {
     github?: string
   }
 }
-
+interface Department {
+  id: number;
+  name: string;
+  members: crewMembers[];
+}
+export type { Department };
 interface CrewCardProps {
   member: crewMembers
 }
