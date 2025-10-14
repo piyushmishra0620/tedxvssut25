@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import Link from 'next/link';
+import config from '@/app/config';
 
 const Footer: React.FC = () => {
   return (
@@ -45,8 +46,8 @@ const Footer: React.FC = () => {
               <p>PIN Code: 768018</p>
             </div>
             <div className="text-sm">
-              <p><strong className="text-white">Phone:</strong> +91 0000-000-000</p>
-              <p><strong className="text-white">Email:</strong> tedxvssut@vssut.ac.in</p>
+              <p><strong className="text-white">Phone:</strong> {config.organizerContact}</p>
+              <p><strong className="text-white">Email:</strong> {config.officialEmail}</p>
             </div>
             <div className="flex items-center gap-4 pt-2">
               <a href="https://facebook.com" aria-label="Facebook" className="h-10 w-10 flex items-center justify-center rounded-full border border-gray-700 transition-colors duration-300 hover:bg-[#E62B1E] hover:text-white hover:border-[#E62B1E]">
