@@ -2,8 +2,9 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import Sponsorship from '@/components/Sponsorship';
 
-const Index = () => {
+const IIndex = () => {
   const [isPaused, setIsPaused] = useState(false);
 
   const sponsors = [
@@ -23,7 +24,8 @@ const Index = () => {
 
   return (
     <div className="w-full bg-black py-8 overflow-hidden">
-      <div className="relative">
+      <Sponsorship />
+      <div className="relative mt-8">
         <div className="flex items-center gap-8 px-4">
           {/* Title on the left */}
           <h2 className="text-4xl md:text-5xl font-bold text-white whitespace-nowrap flex-shrink-0">
@@ -71,4 +73,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default IIndex;
