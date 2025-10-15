@@ -130,7 +130,7 @@ const SpeakersSection = () => {
                     <img
                       src={speaker.imageUrl}
                       alt={speaker.name}
-                      className={`w-full h-full object-cover transition-all duration-500 ${
+                      className={`w-full h-full object-cover transition-all duration-500 hover:scale-125 ${
                         isActive
                           ? ''
                           : getPos === 'right'
@@ -140,9 +140,9 @@ const SpeakersSection = () => {
                     />
 
                     {/* Overlay Gradient */}
-                    <div className="absolute bottom-0 left-0 right-0 h-1/3 sm:h-1/2 bg-gradient-to-t from-black to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 h-1/3 sm:h-1/2 bg-gradient-to-t from-black to-transparent pointer-events-none"></div>
 
-                    <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-3 md:p-2 lg:p-6 flex justify-between md:gap-2 -gap-1  items-end text-white">
+                    <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-3 md:p-2 lg:p-6 flex justify-between md:gap-2 -gap-1  items-end text-white pointer-events-none">
                       <div className="text-left">
                         <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-snug">
                           {speaker.name}
@@ -152,7 +152,7 @@ const SpeakersSection = () => {
                         </p>
                       </div>
                       <div
-                        className={`h-7 w-7 sm:h-8 sm:w-8 md:h-9 md:w-9 lg:h-9 lg:w-9 rounded-full flex items-center justify-center transition-colors duration-300 ${
+                        className={`h-7 w-7 sm:h-8 sm:w-8 md:h-9 md:w-9 lg:h-9 lg:w-9 rounded-full flex items-center justify-center transition-colors duration-300 pointer-events-auto cursor-pointer ${
                           isActive ? 'bg-red-600' : 'bg-gray-500'
                         }`}
                       >
