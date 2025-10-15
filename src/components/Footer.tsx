@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
-import { BsArrowRightCircle } from 'react-icons/bs';
+import Link from 'next/link';
+import config from '@/app/config';
 
 const Footer: React.FC = () => {
   return (
@@ -20,25 +21,18 @@ const Footer: React.FC = () => {
               inspiring change, and fostering innovation. Proudly hosted by Veer Surendra Sai University of
               Technology.
             </p>
-            <a 
-              href="#website" 
-              className="inline-flex items-center gap-2 text-white border-b border-[#E62B1E] pb-1 transition-colors duration-300 hover:text-[#E62B1E] hover:border-white"
-            >
-              Visit our official website <BsArrowRightCircle />
-            </a>
           </div>
 
           {/* Column 2: Quick Links */}
           <div>
             <h4 className="text-lg font-medium text-white tracking-wider mb-5">QUICK LINKS</h4>
             <ul className="space-y-3">
-              <li><a href="#home" className="hover:text-white hover:pl-2 transition-all duration-300">Home</a></li>
-              <li><a href="#about" className="hover:text-white hover:pl-2 transition-all duration-300">About</a></li>
-              <li><a href="#speakers" className="hover:text-white hover:pl-2 transition-all duration-300">Speakers</a></li>
-              <li><a href="#timeline" className="hover:text-white hover:pl-2 transition-all duration-300">Event Timeline</a></li>
-              <li><a href="#venue" className="hover:text-white hover:pl-2 transition-all duration-300">Event Venue</a></li>
-              <li><a href="#sponsor" className="hover:text-white hover:pl-2 transition-all duration-300">Sponsor Us</a></li>
-              <li><a href="#tickets" className="hover:text-white hover:pl-2 transition-all duration-300">Book Tickets</a></li>
+              <li><Link href="/" className="hover:text-white hover:pl-2 transition-all duration-300">Home</Link></li>
+              <li><Link href="/about" className="hover:text-white hover:pl-2 transition-all duration-300">About</Link></li>
+              <li><Link href="/#speakers" className="hover:text-white hover:pl-2 transition-all duration-300">Speakers</Link></li>
+              <li><Link href="/sponsors" className="hover:text-white hover:pl-2 transition-all duration-300">Sponsors</Link></li>
+              <li><Link href="/#venue" className="hover:text-white hover:pl-2 transition-all duration-300">Event Venue</Link></li>
+              <li><Link href="/get-tickets" className="hover:text-white hover:pl-2 transition-all duration-300">Book Tickets</Link></li>
             </ul>
           </div>
 
@@ -52,8 +46,8 @@ const Footer: React.FC = () => {
               <p>PIN Code: 768018</p>
             </div>
             <div className="text-sm">
-              <p><strong className="text-white">Phone:</strong> +91 0000-000-000</p>
-              <p><strong className="text-white">Email:</strong> tedxvssut@vssut.ac.in</p>
+              <p><strong className="text-white">Phone:</strong> {config.organizerContact}</p>
+              <p><strong className="text-white">Email:</strong> {config.officialEmail}</p>
             </div>
             <div className="flex items-center gap-4 pt-2">
               <a href="https://facebook.com" aria-label="Facebook" className="h-10 w-10 flex items-center justify-center rounded-full border border-gray-700 transition-colors duration-300 hover:bg-[#E62B1E] hover:text-white hover:border-[#E62B1E]">
