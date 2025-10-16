@@ -85,22 +85,6 @@ const EventVenue = () => {
                 className="w-full h-64 object-cover grayscale hover:grayscale-0 transition-all duration-500"
               />
             </div>
-
-            {/* Map */}
-            <div>
-              <h2 className="text-2xl font-semibold mb-6 text-gray-300">MAP</h2>
-              <div className="relative overflow-hidden rounded-lg h-80 bg-gray-800">
-                <iframe
-                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.98897368855!2d83.9008341763116!3d21.496161755454683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a213da52ca3b727%3A0xac570b12d083003f!2sE-Learning%20Center%20VSSUT!5e0!3m2!1sen!2sus!4v1759606462745!5m2!1sen!2sus"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  className="grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
-                />
-              </div>
-            </div>
           </div>
         </div>
         </div>
