@@ -28,7 +28,7 @@ export default function Sponsorship() {
         </p>
         
         <Link 
-          href="#sponsorship-brochure"
+          href="/docs/SPONSORSHIP BROCHURE25.pdf"
           className="inline-block cursor-pointer border border-[#c0c0c0] bg-[#f0f0f0] px-7 py-[14px] text-base font-semibold text-[#212121] no-underline transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-white rounded-full"
         >
           Sponsorship Brochure
