@@ -668,7 +668,7 @@ export default function Index() {
       <section className="relative pt-40 px-6 ">
         <div className="max-w-7xl mx-auto text-center">
           <motion.h1
-            className="text-5xl md:text-6xl  mb-6 "
+            className="text-5xl md:text-6xl  mb-6 uppercase"
             initial={{ scale: 2, opacity: 0 }}
             animate={{ scale: 1, opacity: 100 }}
             transition={{
