@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
               <p><strong className="text-white">Phone:</strong> {config.organizerContact}</p>
               <p><strong className="text-white">Email:</strong> {config.officialEmail}</p>
             </div>
-            <div className="flex items-center gap-4 pt-2">
+            <div className="flex justify-center md:justify-start items-center gap-4 pt-2">
               <a href={config.officialTwitter} aria-label="Facebook" className="h-10 w-10 flex items-center justify-center rounded-full border border-gray-700 transition-colors duration-300 hover:bg-[#E62B1E] hover:text-white hover:border-[#E62B1E]">
                 <FaTwitter />
               </a>

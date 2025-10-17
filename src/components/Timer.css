@@ -31,3 +31,17 @@
   margin-top: 0.5rem;
   font-size: 3rem;
 }
+
+@media screen and (max-width: 768px) {
+  .timer-container {
+    gap: 1rem;
+  }
+
+  .time-value {
+    font-size: 3.5rem;
+  }
+
+  .time-label {
+    font-size: 0.75rem;
+  }
+}

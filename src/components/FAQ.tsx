@@ -31,7 +31,7 @@ const FAQ = () => {
             <span className="font-bold text-red-600">FAQ</span>
           </h2>
         </div>
-        <div className="w-[80vw] md:w-[60vw] p-4 rounded-lg flex flex-col mb-10">
+        <div className="w-[90vw] md:w-[60vw] py-4 md:px-4 rounded-lg flex flex-col mb-10">
           {faqs.map(faq => 
             <Accordion
                 key={faq.id}
