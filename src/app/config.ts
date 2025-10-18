@@ -28,7 +28,7 @@ const config = {
       },
       {
         id: 2,
-        name: 'PRIYANSU SAHA',
+        name: 'Priyansu Saha',
         role: 'Design',
         imageUrl: '/images/crew/priyansu.jpg',
         quote:
@@ -94,7 +94,7 @@ const config = {
       },
       {
         id: 3,
-        name: 'SOUMYA RANJAN MOHAPATRA',
+        name: 'Soumya Ranjan Mohapatra',
         role: 'Social Media',
         imageUrl: '/images/crew/soumya.jpg',
         quote:
@@ -184,7 +184,7 @@ const config = {
       },
       {
         id: 2,
-        name: 'SOUMYA RANJAN MOHAPATRA',
+        name: 'Soumya Ranjan Mohapatra',
         role: 'Marketing & Sponsorship',
         imageUrl: '/images/crew/soumya.jpg',
         quote:
@@ -237,7 +237,7 @@ const config = {
         id: 5,
         name: 'Anwesha Aparajita',
         role: 'Marketing & Sponsorship',
-        imageUrl: '/images/crew/anweshaaparajita.jpg',
+        imageUrl: '/images/crew/anwesha.jpg',
         quote:
           'A skilled event manager, marketing expert, and sponsorship negotiator with expertise in planning, promoting, and executing successful events, leveraging creative strategies to drive brand visibility and engagement.',
         social: {
@@ -268,7 +268,7 @@ const config = {
       },
       {
         id: 7,
-        name: 'PINAKI MISHRA',
+        name: 'Pinaki Mishra',
         role: 'Marketing & Sponsorship',
         imageUrl: '/images/crew/pinaki.jpg',
         quote:
@@ -285,7 +285,7 @@ const config = {
         id: 8,
         name: 'Anwesha Panda',
         role: 'Marketing & Sponsorship',
-        imageUrl: '/images/crew/anwesha.jpg',
+        imageUrl: '/images/crew/anweshapanda.jpg',
         quote:
           'As a marketing enthusiast, I thrive on crafting strategies that connect creativity with impact. From understanding audience behavior to building strong brand narratives, I focus on delivering meaningful engagement and measurable results. I enjoy blending analytical insights with innovative ideas — because, to me, marketing isn’t just about selling; it’s about storytelling that inspires action.',
         social: {
@@ -369,7 +369,7 @@ const config = {
       },
       {
         id: 3,
-        name: 'PRIYANSU SAHA',
+        name: 'Priyansu Sahu',
         role: 'Event Management',
         imageUrl: '/images/crew/priyansu.jpg',
         quote:
@@ -416,7 +416,7 @@ const config = {
       },
       {
         id: 6,
-        name: 'PINAKI MISHRA',
+        name: 'Pinaki Mishra',
         role: 'Event Management',
         imageUrl: '/images/crew/pinaki.jpg',
         quote:

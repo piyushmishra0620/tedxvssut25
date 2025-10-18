@@ -143,7 +143,7 @@ const leadershipTeam: crewMembers[] = [
       github: '',
     },
   },
-];
+]
 
 // Marketing & Communications Team
 const marketingTeam: crewMembers[] = [
@@ -222,7 +222,7 @@ const marketingTeam: crewMembers[] = [
       github: '',
     },
   },
-];
+]
 
 // Creative & Design Team
 const creativeTeam: crewMembers[] = [
@@ -301,7 +301,7 @@ const creativeTeam: crewMembers[] = [
       github: '',
     },
   },
-];
+]
 
 // Technical & Production Team
 const technicalTeam: crewMembers[] = [
@@ -380,7 +380,7 @@ const technicalTeam: crewMembers[] = [
       github: '',
     },
   },
-];
+]
 
 // Logistics & Operations Team
 const logisticsTeam: crewMembers[] = [
@@ -459,7 +459,7 @@ const logisticsTeam: crewMembers[] = [
       github: '',
     },
   },
-];
+]
 
 // Digital & Technology Team
 const digitalTeam: crewMembers[] = [
@@ -538,7 +538,7 @@ const digitalTeam: crewMembers[] = [
       github: 'https://github.com/yashpandey',
     },
   },
-];
+]
 // Volunteers
 const volunteers: crewMembers[] = [
   {
@@ -807,7 +807,7 @@ export default function Index() {
             </h2>
             <div className="h-1 w-32 sm:w-40 mx-auto lg:mx-0 bg-gradient-to-r from-red-600 via-red-500 to-black" />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-18 justify-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-18 justify-items-center capitalize">
             {config.crew.videography.map((member, i) => (
               <CrewCard key={i} member={member} />
             ))}
@@ -830,7 +830,7 @@ export default function Index() {
           </div>
         </div>
       </section>
-      
+
       {/* Core Team Section */}
       <section className="py-12 px-4 sm:px-6 lg:py-16">
         <div className="max-w-[1400px] mx-auto">
