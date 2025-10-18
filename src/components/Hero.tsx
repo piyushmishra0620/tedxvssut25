@@ -31,14 +31,14 @@ const AnimatedText = () => {
   return (
     <h1 className='absolute z-30 w-screen text-center top-[60%] -translate-y-[50%] font-bold text-2xl md:text-7xl gap-2 md:gap-7 flex justify-center items-center'>
       <motion.span
-        className={`text-red-500 ${ isFirstText ? '' : 'text-9xl' }`}
+        className={`text-red-500 ${ isFirstText ? '' : 'text-6xl md:text-9xl' }`}
         animate={controls}
         initial={{ opacity: 0.75, y: 0 }}
       >
         {isFirstText ? 'PARALLAX OF' : 'TEDx'}
       </motion.span>
       <motion.span
-        className={`text-white ${ isFirstText ? '' : 'text-9xl' }`}
+        className={`text-white ${ isFirstText ? '' : 'text-6xl md:text-9xl' }`}
         animate={controls}
         initial={{ opacity: 0.75, y: 0 }}
       >
