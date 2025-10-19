@@ -24,14 +24,14 @@ const arr: SpeakerCardProps[] = [
                 <AvatarImage
                     src="/profileDemo.jpg"
                     alt="John Doe"
-                    className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                    className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                 />
                 <AvatarFallback>
                     <Image
                         fill
                         src="/UserImageFallBack.png"
                         alt="John Doe"
-                        className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                        className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                     />
                 </AvatarFallback>
             </Avatar>
@@ -49,14 +49,14 @@ const arr: SpeakerCardProps[] = [
                 <AvatarImage
                     src="/profileDemo.jpg"
                     alt="John Doe"
-                    className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                    className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                 />
                 <AvatarFallback>
                     <Image
                         fill
                         src="/UserImageFallBack.png"
                         alt="John Doe"
-                        className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                        className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                     />
                 </AvatarFallback>
             </Avatar>
@@ -74,14 +74,14 @@ const arr: SpeakerCardProps[] = [
                 <AvatarImage
                     src="/profileDemo.jpg"
                     alt="John Doe"
-                    className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                    className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                 />
                 <AvatarFallback>
                     <Image
                         fill
                         src="/UserImageFallBack.png"
                         alt="John Doe"
-                        className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                        className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                     />
                 </AvatarFallback>
             </Avatar>
@@ -99,14 +99,14 @@ const arr: SpeakerCardProps[] = [
                 <AvatarImage
                     src="/profileDemo.jpg"
                     alt="John Doe"
-                    className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                    className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                 />
                 <AvatarFallback>
                     <Image
                         fill
                         src="/UserImageFallBack.png"
                         alt="John Doe"
-                        className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                        className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                     />
                 </AvatarFallback>
             </Avatar>
@@ -124,14 +124,14 @@ const arr: SpeakerCardProps[] = [
                 <AvatarImage
                     src="/profileDemo.jpg"
                     alt="John Doe"
-                    className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                    className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                 />
                 <AvatarFallback>
                     <Image
                         fill
                         src="/UserImageFallBack.png"
                         alt="John Doe"
-                        className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                        className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                     />
                 </AvatarFallback>
             </Avatar>
@@ -149,14 +149,14 @@ const arr: SpeakerCardProps[] = [
                 <AvatarImage
                     src="/profileDemo.jpg"
                     alt="John Doe"
-                    className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                    className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                 />
                 <AvatarFallback>
                     <Image
                         fill
                         src="/UserImageFallBack.png"
                         alt="John Doe"
-                        className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                        className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                     />
                 </AvatarFallback>
             </Avatar>
@@ -174,14 +174,14 @@ const arr: SpeakerCardProps[] = [
                 <AvatarImage
                     src="/profileDemo.jpg"
                     alt="John Doe"
-                    className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                    className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                 />
                 <AvatarFallback>
                     <Image
                         fill
                         src="/UserImageFallBack.png"
                         alt="John Doe"
-                        className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                        className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                     />
                 </AvatarFallback>
             </Avatar>
@@ -199,14 +199,14 @@ const arr: SpeakerCardProps[] = [
                 <AvatarImage
                     src="/profileDemo.jpg"
                     alt="John Doe"
-                    className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                    className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                 />
                 <AvatarFallback>
                     <Image
                         fill
                         src="/UserImageFallBack.png"
                         alt="John Doe"
-                        className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                        className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                     />
                 </AvatarFallback>
             </Avatar>
@@ -224,14 +224,14 @@ const arr: SpeakerCardProps[] = [
                 <AvatarImage
                     src="/profileDemo.jpg"
                     alt="John Doe"
-                    className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                    className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                 />
                 <AvatarFallback>
                     <Image
                         fill
                         src="/UserImageFallBack.png"
                         alt="John Doe"
-                        className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                        className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                     />
                 </AvatarFallback>
             </Avatar>
@@ -249,14 +249,14 @@ const arr: SpeakerCardProps[] = [
                 <AvatarImage
                     src="/profileDemo.jpg"
                     alt="John Doe"
-                    className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                    className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                 />
                 <AvatarFallback>
                     <Image
                         fill
                         src="/UserImageFallBack.png"
                         alt="John Doe"
-                        className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                        className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                     />
                 </AvatarFallback>
             </Avatar>
@@ -274,14 +274,14 @@ const arr: SpeakerCardProps[] = [
                 <AvatarImage
                     src="/profileDemo.jpg"
                     alt="John Doe"
-                    className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                    className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                 />
                 <AvatarFallback>
                     <Image
                         fill
                         src="/UserImageFallBack.png"
                         alt="John Doe"
-                        className="object-cover rounded-[10px] hover:scale-175 transition-all duration-300 ease-out"
+                        className="object-cover rounded-[10px] hover:scale-125 transition-all duration-300 ease-out"
                     />
                 </AvatarFallback>
             </Avatar>

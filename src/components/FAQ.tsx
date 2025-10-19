@@ -32,8 +32,9 @@ const FAQ = () => {
           </h2>
         </div>
         <div className="w-[80vw] md:w-[60vw] p-4 rounded-lg flex flex-col mb-10">
-          {faqs.map(faq => 
+          {faqs.map((faq,index) => 
             <Accordion
+                key={index}
                 title={faq.title}
                 answer={faq.answer}
             />
