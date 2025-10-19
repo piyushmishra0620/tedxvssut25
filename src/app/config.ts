@@ -30,7 +30,7 @@ const config = {
         id: 2,
         name: 'Priyansu Saha',
         role: 'Design',
-        imageUrl: '/images/crew/priyansu.jpg',
+        imageUrl: '/images/crew/priyansu.jpeg',
         quote:
           'As a graphic designer for TEDx, I played a key role in creating cohesive and impactful visuals. I combined creativity with storytelling to design posters, banners, and digital assets that effectively conveyed the event’s inspiring theme.',
         social: {
@@ -46,7 +46,7 @@ const config = {
         id: 3,
         name: 'Rajibalochan Pradhan',
         role: 'Design',
-        imageUrl: '/images/crew/rajibalochan.jpg',
+        imageUrl: '/images/crew/rajibalochan.jpeg',
         quote:
           'As a graphic designer, my role was pivotal in shaping the visual identity and creative direction of the TEDx design process.',
         social: {
@@ -317,7 +317,7 @@ const config = {
       {
         id: 10,
         name: 'Pratikshya Mohapatra',
-        role: 'Marketing',
+        role: 'Marketing & Sponsorship',
         imageUrl: '/images/crew/pratikshya.jpg',
         quote:
           'As part of the Sponsorship team for TEDx, I love the challenge of turning ideas into impactful collaborations. From reaching out to brands to crafting meaningful partnerships, my role revolves around connecting vision with value. I enjoy adding a touch of persuasion and creativity to every pitch—because every great event deserves the right support behind it!',
@@ -369,9 +369,9 @@ const config = {
       },
       {
         id: 3,
-        name: 'Priyansu Sahu',
+        name: 'Priyansu Saha',
         role: 'Event Management',
-        imageUrl: '/images/crew/priyansu.jpg',
+        imageUrl: '/images/crew/priyansu.jpeg',
         quote:
           'As a graphic designer for TEDx, I played a key role in creating cohesive and impactful visuals. I combined creativity with storytelling to design posters, banners, and digital assets that effectively conveyed the event’s inspiring theme.',
         social: {
@@ -468,7 +468,7 @@ const config = {
         id: 2,
         name: 'Shreyas Dash',
         role: 'Public Relations',
-        imageUrl: '/images/crew/shreyas.jpg',
+        imageUrl: '/images/crew/shreyas.jpeg',
         quote:
           'A passionate content writer with a flair for crafting impactful narratives that connect and inspire.\nAn engaging public speaker who brings ideas to life with clarity, confidence, and authenticity',
         social: {
@@ -512,6 +512,21 @@ const config = {
             'https://www.instagram.com/__.its_haraa.__?igsh=MWpkbnhrN2drdmVleg==',
         },
       },
+      {
+        id: 5,
+        name: 'Adarsh Ray',
+        role: 'Public Relations',
+        imageUrl: '/images/crew/adarsh.jpeg',
+        quote:
+          'At TEDx, my role revolved around building meaningful connections and shaping narratives that truly resonate. I believe impactful communication goes beyond words. It’s about creating relationships, conveying ideas authentically, and leaving a lasting impression. The experience deepened my passion for storytelling and strategic outreach.',
+        social: {
+          facebook: '',
+          twitter: '',
+          linkedin: 'https://www.linkedin.com/in/adarsh-ray-1569912b3/',
+          github: '',
+          instagram: 'https://www.instagram.com/being_adarsh10/',
+        },
+      },
     ],
     'hospitality_&_logistics': [
       {
@@ -534,7 +549,7 @@ const config = {
       {
         id: 1,
         name: 'Ritik Kumar Jena',
-        role: 'Marketing & Sponsorship',
+        role: 'Videography',
         imageUrl: '/images/crew/ritik.jpeg',
         quote:
           'From storytelling through video to building sponsorships that matter, I thrive on creating experiences that leave an impact.',
@@ -548,7 +563,23 @@ const config = {
             'https://www.instagram.com/arey.ritik?igsh=MXFhNG04anN5ZHZjMw==',
         },
       },
+      {
+        id: 2,
+        name: 'Aroshree Prasad',
+        role: 'Videography',
+        imageUrl: '/images/crew/aroshree.jpg',
+        quote:
+          ' As a video editor and videographer, contributing to the event’s creative vision through videography. Capturing moments, stories, and emotions through the lens, I aim to bring the spirit of our event to life for everyone who experiences it—both on and off the stage.',
+        social: {
+          facebook: 'https://www.facebook.com/aroshree.p.sahoo',
+          twitter: 'https://x.com/im_arosh',
+          linkedin: 'https://www.linkedin.com/in/aroshree-prasad-b02041372',
+          github: '',
+          instagram: 'https://www.instagram.com/_aroshree_prasad_',
+        },
+      },
     ],
+    tech: [],
   },
 }
 
