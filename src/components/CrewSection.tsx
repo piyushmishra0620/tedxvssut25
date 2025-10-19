@@ -172,7 +172,7 @@ const CrewSection = () => {
         alt=""
         width={1249}
         height={750}
-        className='grayscale invert opacity-[45%] absolute top-0 bottom-0 w-screen'
+        className='grayscale invert opacity-[75%] absolute top-0 bottom-0 w-screen'
       />
       <div className='absolute left-0 top-0 w-screen h-full bg-radial from-transparent to-black to-80%'></div>
       <div className="container mx-auto text-center px-4 relative">

@@ -9,7 +9,7 @@ const InfoSection = () => {
             alt=""
             width={1026}
             height={750}
-            className='absolute top-0 left-0 w-screen z-[0] grayscale opacity-25'
+            className='absolute top-0 left-0 w-screen z-[0] grayscale opacity-[15%]'
         />
         <div className='absolute top-0 left-0 w-screen h-full bg-linear-to-b from-[#121212] via-transparent to-black'></div>
         <div className="info-grid z-[100]">
