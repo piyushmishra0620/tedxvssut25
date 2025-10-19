@@ -1,5 +1,6 @@
 .info-section-container {
   /* Using approximate dimensions and styling from the image */
+  position: relative;
   width: 100vw;
   margin: 0 auto;
   padding: 80px 15vw; /* Vertical and horizontal padding */
@@ -8,6 +9,7 @@
 }
 
 .info-grid {
+  position: relative;
   display: grid;
   /* Creates three equal-width columns for the cards */
   grid-template-columns: repeat(3, 1fr);

@@ -1,9 +1,18 @@
+import Image from 'next/image';
 import './info-section.css';
 
 const InfoSection = () => {
     return (
-    <section className="info-section-container bg-black bg-linear-to-b from-[#121212] from-[40%] to-black">
-        <div className="info-grid">
+    <section className="info-section-container bg-black">
+        <Image
+            src='/images/background2.avif'
+            alt=""
+            width={1026}
+            height={750}
+            className='absolute top-0 left-0 w-screen z-[0] grayscale opacity-25'
+        />
+        <div className='absolute top-0 left-0 w-screen h-full bg-linear-to-b from-[#121212] via-transparent to-black'></div>
+        <div className="info-grid z-[100]">
             <div className="info-card">
                 <h2>What is TED?</h2>
                 <p>
