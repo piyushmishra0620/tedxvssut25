@@ -3,7 +3,7 @@ import './info-section.css';
 
 const InfoSection = () => {
     return (
-    <section className="info-section-container bg-black">
+    <section className="info-section-container bg-black overflow-hidden">
         <Image
             src='/images/background2.avif'
             alt=""
