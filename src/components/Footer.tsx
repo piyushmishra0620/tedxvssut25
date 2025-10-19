@@ -5,7 +5,7 @@ import config from '@/app/config';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="relative bg-black text-gray-400 font-sans">
+    <footer className="relative bg-black bg-gradient-to-tr from-white/20 via-black to-red-500/20 text-gray-400 font-sans">
       <div className="absolute top-0 left-0 right-0 h-[2px] w-screen bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-50" />
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         {/* Main content grid */}

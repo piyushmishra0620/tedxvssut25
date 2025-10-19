@@ -2,7 +2,7 @@ import './info-section.css';
 
 const InfoSection = () => {
     return (
-    <section className="info-section-container">
+    <section className="info-section-container bg-black bg-linear-to-b from-[#121212] from-[40%] to-black">
         <div className="info-grid">
             <div className="info-card">
                 <h2>What is TED?</h2>
