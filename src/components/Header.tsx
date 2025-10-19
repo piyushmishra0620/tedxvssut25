@@ -17,7 +17,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full h-[90px] z-[100] flex items-center justify-center md:mt-4">
+    <header className="fixed top-0 left-0 w-full h-[90px] z-[1000] flex items-center justify-center md:mt-4">
       <nav className="w-[90vw] md:w-3/5 flex justify-between items-center border backdrop-blur-[10px] px-10 py-0 md:py-[15px] rounded-[40px] border-solid border-[rgba(255,255,255,0.2)]">
         {/* ---------- LOGO ---------- */}
         <Link
