@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation, useScroll, useTransform } from 'framer-motion';
 import AnimatedTimer from './Timer';
 
@@ -58,11 +58,21 @@ const Hero = () => {
   const imageTop = useTransform(scrollY, [0, 300], ['30%', '50%']);
   const timerOpacity = useTransform(scrollY, [500, 600], [0.0, 1.0]);
 
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.65;
+      videoRef.current.play();
+    }
+  }, [videoRef])
+
   return (
     <div className='relative w-screen h-[200vh]'>
       <div className='w-screen h-screen overflow-y-hidden relative bg-black overflow-x-hidden sticky top-0'>
         <div className="relative h-screen w-full overflow-hidden">
           <motion.video
+            ref={videoRef}
             src="/video/TeaserCut.webm"
             autoPlay
             muted
