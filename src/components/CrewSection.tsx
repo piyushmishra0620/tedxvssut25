@@ -3,6 +3,7 @@
 import config from '@/app/config'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import {
   BsFacebook,
   BsGithub,
@@ -165,7 +166,15 @@ export const CrewCard: React.FC<CrewCardProps> = ({ member }) =>  {
 
 const CrewSection = () => {
   return (
-    <section className="bg-black text-white py-8 md:py-10 font-sans overflow-hidden lg:h-screen relative">
+    <section className="relative bg-black text-white py-8 md:py-10 font-sans overflow-hidden lg:h-screen relative">
+      <Image
+        src='/images/background.avif'
+        alt=""
+        width={1249}
+        height={750}
+        className='grayscale invert opacity-[45%] absolute top-0 bottom-0 w-screen'
+      />
+      <div className='absolute left-0 top-0 w-screen h-full bg-radial from-transparent to-black to-80%'></div>
       <div className="container mx-auto text-center px-4 relative">
         <h2 className="text-2xl sm:text-3xl md:text-5xl font-light uppercase tracking-widest">
           <span className="font-bold text-red-600">Crew</span> Members
