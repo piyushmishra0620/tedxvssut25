@@ -1,13 +1,13 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import Link from 'next/link';
 import config from '@/app/config';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-black text-gray-400 font-sans">
+    <footer className="relative bg-black text-gray-400 font-sans">
+      <div className="absolute top-0 left-0 right-0 h-[2px] w-screen bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-50" />
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-        
         {/* Main content grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-10">
           
@@ -33,6 +33,7 @@ const Footer: React.FC = () => {
               <li><Link href="/sponsors" className="hover:text-white hover:pl-2 transition-all duration-300">Sponsors</Link></li>
               <li><Link href="/#venue" className="hover:text-white hover:pl-2 transition-all duration-300">Event Venue</Link></li>
               <li><Link href="/get-tickets" className="hover:text-white hover:pl-2 transition-all duration-300">Book Tickets</Link></li>
+              <li><Link href="/privacy-policy" className="hover:text-white hover:pl-2 transition-all duration-300">Privacy Policy</Link></li>
             </ul>
           </div>
 
@@ -49,17 +50,17 @@ const Footer: React.FC = () => {
               <p><strong className="text-white">Phone:</strong> {config.organizerContact}</p>
               <p><strong className="text-white">Email:</strong> {config.officialEmail}</p>
             </div>
-            <div className="flex items-center gap-4 pt-2">
-              <a href="https://facebook.com" aria-label="Facebook" className="h-10 w-10 flex items-center justify-center rounded-full border border-gray-700 transition-colors duration-300 hover:bg-[#E62B1E] hover:text-white hover:border-[#E62B1E]">
-                <FaFacebookF />
+            <div className="flex justify-center md:justify-start items-center gap-4 pt-2">
+              <a href={config.officialTwitter} aria-label="Facebook" className="h-10 w-10 flex items-center justify-center rounded-full border border-gray-700 transition-colors duration-300 hover:bg-[#E62B1E] hover:text-white hover:border-[#E62B1E]">
+                <FaTwitter />
               </a>
-              <a href="https://instagram.com" aria-label="Instagram" className="h-10 w-10 flex items-center justify-center rounded-full border border-gray-700 transition-colors duration-300 hover:bg-[#E62B1E] hover:text-white hover:border-[#E62B1E]">
+              <a href={config.officialInsta} aria-label="Instagram" className="h-10 w-10 flex items-center justify-center rounded-full border border-gray-700 transition-colors duration-300 hover:bg-[#E62B1E] hover:text-white hover:border-[#E62B1E]">
                 <FaInstagram />
               </a>
-              <a href="https://linkedin.com" aria-label="LinkedIn" className="h-10 w-10 flex items-center justify-center rounded-full border border-gray-700 transition-colors duration-300 hover:bg-[#E62B1E] hover:text-white hover:border-[#E62B1E]">
+              <a href={config.officialLinkedIn} aria-label="LinkedIn" className="h-10 w-10 flex items-center justify-center rounded-full border border-gray-700 transition-colors duration-300 hover:bg-[#E62B1E] hover:text-white hover:border-[#E62B1E]">
                 <FaLinkedinIn />
               </a>
-              <a href="https://youtube.com" aria-label="YouTube" className="h-10 w-10 flex items-center justify-center rounded-full border border-gray-700 transition-colors duration-300 hover:bg-[#E62B1E] hover:text-white hover:border-[#E62B1E]">
+              <a href={config.officialYoutube} aria-label="YouTube" className="h-10 w-10 flex items-center justify-center rounded-full border border-gray-700 transition-colors duration-300 hover:bg-[#E62B1E] hover:text-white hover:border-[#E62B1E]">
                 <FaYoutube />
               </a>
               <a href="https://ted.com" aria-label="TED" className="h-10 w-10 flex items-center justify-center rounded-full border border-gray-700 font-bold text-sm tracking-wider transition-colors duration-300 hover:bg-[#E62B1E] hover:text-white hover:border-[#E62B1E]">

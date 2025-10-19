@@ -26,9 +26,9 @@ const IIndex = () => {
     <div className="w-full bg-black py-8 overflow-hidden">
       <Sponsorship />
       <div className="relative mt-8">
-        <div className="flex items-center gap-8 px-4">
+        <div className="flex flex-col md:flex-row items-center gap-8 px-4">
           {/* Title on the left */}
-          <h2 className="text-4xl md:text-5xl font-bold text-white whitespace-nowrap flex-shrink-0">
+          <h2 className="text-3xl md:text-5xl font-bold text-white whitespace-nowrap flex-shrink-0">
             PAST <span className="text-gray-400">SPONSORS</span>
           </h2>
           
@@ -53,7 +53,7 @@ const IIndex = () => {
                 {duplicatedSponsors.map((sponsor, index) => (
                   <motion.div
                     key={`${sponsor.id}-${index}`}
-                    className={`flex-shrink-0 w-28 h-28 ${sponsor.bg} rounded-xl flex items-center justify-center text-4xl cursor-pointer shadow-lg`}
+                    className={`flex-shrink-0 w-14 h-14 md:w-28 md:h-28 ${sponsor.bg} rounded-xl flex items-center justify-center text-4xl cursor-pointer shadow-lg`}
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.2 }}
                   >
