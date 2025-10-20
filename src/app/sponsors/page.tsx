@@ -1,13 +1,11 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import Sponsorship from '@/components/Sponsorship';
 import Image from 'next/image';
 
 const IIndex = () => {
-  const [isPaused, setIsPaused] = useState(false);
-
   const sponsors = [
     { id: 1, name: 'MCL', bg: 'bg-white', imageUrl: '/sponsors_image/MCL.png' },
     { id: 2, name: 'Career Launcher', bg: 'bg-white', imageUrl: '/sponsors_image/Career_Launcher.png' },
@@ -61,14 +59,12 @@ const IIndex = () => {
           {/* Scrolling sponsors */}
           <div 
             className="flex-1 relative"
-            onMouseEnter={() => setIsPaused(true)}
-            onMouseLeave={() => setIsPaused(false)}
           >
             <div className="overflow-hidden">
               <motion.div 
                 className="flex gap-6 items-center"
                 animate={{
-                  x: isPaused ? undefined : [0, -(totalWidth / 3)],
+                  x: [0, -(totalWidth / 3)],
                 }}
                 transition={{
                   duration: 40,
