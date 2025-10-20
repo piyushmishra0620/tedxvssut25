@@ -20,7 +20,7 @@ const EventVenue = () => {
         </div>
 
        {/* Main Content Grid */}
-        <div className="flex flex-col-reverse md:flex-row gap-12 mb-12">
+        <div className="flex flex-col-reverse md:flex-row gap-12 mb-12 relative z-[105]">
           {/* Left Column */}
           <div className="flex flex-col gap-8 basis-1/2">
             {/* About Venue */}
@@ -71,7 +71,7 @@ const EventVenue = () => {
                 and inspiration
               </p>
               <div className='flex md:justify-start justify-center'>
-                <Link href='/get-tickets' className="bg-white text-black px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-600 hover:text-white transition-colors cursor-pointer">
+                <Link href='/get-tickets' className="bg-white text-black px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-600 hover:text-white transition-colors">
                   Book Tickets
                 </Link>
               </div>
