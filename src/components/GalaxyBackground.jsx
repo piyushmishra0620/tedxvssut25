@@ -1,21 +1,6 @@
 import React, { useRef, useEffect } from "react";
 // @ts-nocheck
 
-/**
- * GalaxyBackground (raw WebGL)
- *
- * Props:
- *  - style, className: passed to the canvas container
- *  - speed: multiplier for animation speed (default 1.0)
- *  - pixelRatioCap: cap for devicePixelRatio (default 2)
- *
- * Usage:
- *  <div style={{ position: 'relative', width: '100%', height: '400px' }}>
- *    <GalaxyBackground style={{ position: 'absolute', inset: 0 }} />
- *    <YourContent />
- *  </div>
- */
-
 export default function GalaxyBackground({
   style = { position: "absolute", inset: 0, zIndex: 0 },
   className,
@@ -107,7 +92,7 @@ export default function GalaxyBackground({
       const float GALAXY_R = 1.0/2.0;
       const float BULB_R = 1.0/2.5;
       const vec3 GALAXY_COL = vec3(1.0,0.0,0.0);
-      const vec3 BULB_COL   = vec3(0.5,0.5,0.5);
+      const vec3 BULB_COL   = vec3(0.5,0.0,0.0);
       const float BULB_BLACK_R = 1.0/4.0;
       const vec3 BULB_BLACK_COL   = vec3(0.0,0.0,0.0);
       const vec3 SKY_COL    = 0.5 * vec3(0.0,0.0,0.0);
