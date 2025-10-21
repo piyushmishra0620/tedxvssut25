@@ -6,6 +6,7 @@ const EventVenue = () => {
 
   return (
     <div id="venue" className="min-h-screen bg-black text-white px-6 py-12">
+      <div className='absolute z-[100] -translate-x-[50%] -translate-y-[12.5%] w-96 h-96 md:w-256 md:h-256 bg-radial from-red-500/30 to-transparent to-80%'></div>
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -19,7 +20,7 @@ const EventVenue = () => {
         </div>
 
        {/* Main Content Grid */}
-        <div className="flex flex-col-reverse md:flex-row gap-12 mb-12">
+        <div className="flex flex-col-reverse md:flex-row gap-12 mb-12 relative z-[105]">
           {/* Left Column */}
           <div className="flex flex-col gap-8 basis-1/2">
             {/* About Venue */}
@@ -70,7 +71,7 @@ const EventVenue = () => {
                 and inspiration
               </p>
               <div className='flex md:justify-start justify-center'>
-                <Link href='/get-tickets' className="bg-white text-black px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-600 hover:text-white transition-colors cursor-pointer">
+                <Link href='/get-tickets' className="bg-white text-black px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-600 hover:text-white transition-colors">
                   Book Tickets
                 </Link>
               </div>
