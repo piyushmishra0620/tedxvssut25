@@ -13,7 +13,7 @@ export default function Accordion({ title, answer }: {title: string, answer: str
         <span className="main-font text-white/90 font-light tracking-wide group-hover:text-[#ff0000] transition-colors duration-300">
           {title}
         </span>
-        <div className="relative flex items-center justify-center h-8 w-8 rounded-full bg-[#ffffff]/20 backdrop-blur-sm p-1 ml-4 transition-all duration-300 group-hover:bg-[#ffffff]/40">
+        <div className="relative flex items-center justify-center h-8 w-8 rounded-full bg-[#000000] backdrop-blur-sm p-1 ml-4 transition-all duration-300 group-hover:bg-[#000000]/5">
           <span className={`absolute w-4 h-0.5 bg-[#ff0000] rounded-full transition-transform duration-300 ${accordionOpen ? "rotate-0" : "rotate-0"}`}></span>
           <span className={`absolute w-4 h-0.5 bg-[#ff0000] rounded-full transition-transform duration-300 ${accordionOpen ? "rotate-90 opacity-0" : "rotate-90"}`}></span>
         </div>

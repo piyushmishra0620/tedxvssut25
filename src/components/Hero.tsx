@@ -1,9 +1,10 @@
 "use client";
 
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation, useScroll, useTransform } from 'framer-motion';
 import AnimatedTimer from './Timer';
+import GalaxyBackground from './GalaxyBackground';
 
 const AnimatedText = () => {
   const [isFirstText, setIsFirstText] = React.useState(true);
@@ -52,17 +53,29 @@ const AnimatedText = () => {
 const Hero = () => {
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
-  const imageScale = useTransform(scrollY, [0, 300, 600], [1.0, 2.5, 2.5]);
+  const imageScale = useTransform(scrollY, [0, 300, 600], [1.0, 2.0, 2.0]);
   const image2Scale = useTransform(scrollY, [0, 300, 600], [1.0, 2.5, 4.0]);
   const imageOpacity = useTransform(scrollY, [0, 300, 400], [1, 1, 0]);
   const imageTop = useTransform(scrollY, [0, 300], ['30%', '50%']);
-  const timerOpacity = useTransform(scrollY, [500, 600], [0.0, 1.0]);
+  const timerOpacity = useTransform(scrollY, [400, 600], [0.0, 1.0]);
+
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.65;
+      videoRef.current.play();
+    }
+  }, [videoRef])
 
   return (
     <div className='relative w-screen h-[200vh]'>
       <div className='w-screen h-screen overflow-y-hidden relative bg-black overflow-x-hidden sticky top-0'>
         <div className="relative h-screen w-full overflow-hidden">
+          <GalaxyBackground className='w-full h-screen absolute top-0 left-0 ' />
+
           <motion.video
+            ref={videoRef}
             src="/video/TeaserCut.webm"
             autoPlay
             muted
@@ -85,19 +98,6 @@ const Hero = () => {
         >
           <Image
             src="/images/X-TED.png"
-            width={312}
-            height={290}
-            alt="X"
-            className='scale-100'
-          />
-        </motion.div>
-
-        <motion.div
-          className='absolute z-30 left-[50%] -translate-x-[50%] -translate-y-[50%]'
-          style={{ scale: image2Scale, top: imageTop }}
-        >
-          <Image
-            src="/images/X-TED RED.png"
             width={312}
             height={290}
             alt="X"

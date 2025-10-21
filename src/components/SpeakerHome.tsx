@@ -231,6 +231,7 @@ const SpeakersSection = () => {
           </div>
         </div>
       </div>
+      <div className='absolute z-[100] right-0 translate-x-[50%] top-0 w-96 h-96 md:w-196 md:h-196 bg-radial from-white/30 to-transparent to-80%'></div>
     </section>
   );
 }

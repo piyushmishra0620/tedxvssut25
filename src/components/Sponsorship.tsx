@@ -3,8 +3,10 @@ import Squares from '@/components/Squares';
 
 export default function Sponsorship() {
   return (
-    <div className="relative min-w-screen h-[50vh] w-screen overflow-hidden">
-      <div className="absolute inset-0 bg-black">
+    <div className="relative min-w-screen h-[50vh] w-screen overflow-hidden bg-black">
+      <div className="absolute z-[100] top-0 left-0 right-0 h-[2px] w-screen bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-50" />
+      <div className="absolute z-[100] bottom-0 left-0 right-0 h-[2px] w-screen bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-50" />
+      <div className="absolute inset-0 bg-linear-to-tr from-red-500/20 via-black to-red-500/20">
         <Squares 
           speed={0.5} 
           squareSize={28}
