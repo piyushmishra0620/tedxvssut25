@@ -1,4 +1,3 @@
-import { CrewCard } from "@/components/CrewSection";
 import CrewSection from "@/components/CrewSection";
 
 import Hero from "@/components/Hero";
@@ -12,17 +11,19 @@ export default function Index() {
   return (
     <>
     <Hero />
-    <InfoSection />
 
-    <SpeakerHome />
-    
-    <Venue />
+    <div className="relative">
+      <InfoSection />
 
-    <CrewSection />
+      <SpeakerHome />
+      
+      <Venue />
 
-    <Sponsorship />
+      <CrewSection />
 
-    <FAQ />
+      <Sponsorship />
+      <FAQ />
+    </div>
   </>
   )
 }

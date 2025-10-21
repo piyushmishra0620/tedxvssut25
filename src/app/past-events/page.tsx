@@ -38,8 +38,8 @@ export default function PastEvents() {
   const years: Array<'2021' | '2020' | '2019'> = ['2021', '2020', '2019'];
 
   return (
-    <div className="min-h-screen bg-black py-16 px-14">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen bg-black py-16 px-4 flex flex-col items-center">
+      <div className="pt-16">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -47,7 +47,7 @@ export default function PastEvents() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
+          <h1 className="text-4xl md:text-5xl md:text-6xl font-bold text-white mb-4">
             PAST <span className="text-red-500">EVENTS</span>
           </h1>
           <p className="text-gray-300 text-lg">Relive the moments that inspired us</p>
@@ -81,7 +81,7 @@ export default function PastEvents() {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
             transition={{ duration: 0.25 }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-screen md:max-w-[60vw]"
           >
             {events[selectedYear].map((event, index) => (
               <motion.div

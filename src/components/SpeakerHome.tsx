@@ -323,13 +323,6 @@ const SpeakersSection = () => {
             <GrFormNext className="text-2xl sm:text-3xl" />
           </button>
         </div>
-        <Link
-          href="/speakers"
-          className="inline-block px-6 py-2 mt-6 rounded-md bg-red-600 text-white font-semibold tracking-wide
-             hover:bg-red-700 hover:scale-105 hover:shadow-lg transition-all duration-300"
-        >
-          View All Speakers
-        </Link>
       </div>
     </section>
   )
