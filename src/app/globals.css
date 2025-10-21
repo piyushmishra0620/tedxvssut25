@@ -7,20 +7,20 @@
   height: 20px;
 }
 
-.simplebar-track .simplebar-scrollbar{
-  pointer-events:auto !important;
+.simplebar-track .simplebar-scrollbar {
+  pointer-events: auto !important;
 }
 
-.simplebar-track.simplebar-vertical{
+.simplebar-track.simplebar-vertical {
   visibility: visible !important;
-  overflow-y:auto !important;
+  overflow-y: auto !important;
 }
 
 .simplebar-track .simplebar-scrollbar::before {
   background: rgba(255, 255, 255, 0.363) !important;
   transition: none !important;
   border-radius: 7px !important;
-  pointer-events:none !important;
+  pointer-events: none !important;
 }
 
 
@@ -28,7 +28,48 @@
   background: rgba(255, 255, 255, 0.644) !important;
 }
 
+.swiper-pagination {
+  position: relative !important;
+  bottom: 0 !important;
+  margin-top: 25px !important;
+  display: flex;
+  justify-content: center;
+}
 
+.swiper-pagination-bullet {
+  width: 8px !important;
+  background-color: white !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 18px !important;
+  border-radius: 10px !important;
+  background-color: rgb(224, 10, 10) !important;
+}
+
+.perspective {
+  -webkit-perspective:1000px;
+  perspective: 1000px;
+}
+
+.rotate{
+  animation:rotation 0.5s linear forwards;
+}
+.transform-style-preserve-3d {
+  -webkit-transform-style:preserve-3d;
+  transform-style: preserve-3d;
+}
+
+@keyframes rotation{
+  to{
+    transform:rotateY(180deg);
+  }
+}
+
+.backface-hidden {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
 
 .custom-scrollbar::-webkit-scrollbar-track {
   background: transparent;
