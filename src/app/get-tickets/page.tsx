@@ -13,7 +13,7 @@ const ticketOptions = [
     price: "₹700",
     audience: "For VSSUT Students",
     icon: <FaUsers size={32} />,
-    link: "/payment/executive-pass" // Replace with actual payment URL
+    link: "https://rzp.io/rzp/F9boP7p"
   },
   {
     title: "Only Merchandise",
@@ -21,7 +21,7 @@ const ticketOptions = [
     price: "₹520",
     audience: "For VSSUT Students",
     icon: <TbShirtFilled size={32} />,
-    link: "/payment/merch"
+    link: "https://rzp.io/rzp/O0vsJYvg"
   },
   {
     title: "Outsider Pass",
@@ -29,7 +29,7 @@ const ticketOptions = [
     price: "₹800",
     audience: "For Non-VSSUT Attendees",
     icon: <MdLunchDining size={32} />,
-    link: "/payment/outsider-pass"
+    link: "https://rzp.io/rzp/DKIs4xkd"
   }
 ];
 
