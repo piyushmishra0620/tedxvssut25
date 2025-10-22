@@ -22,59 +22,59 @@ const speakers = [
     title: 'Content Creator',
     imageUrl: '/speaker_image/hiten.png',
     bio: "Entrepreneurship & Technology (Influencer, known for talks on innovation and tech ecosystem)"
-  },
-  // {
-  //   id: 2,
-  //   name: 'Dr. Priya Sharma',
-  //   title: 'Quantum Physicist, Innovate Labs',
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Building thoughtful web interfaces requires balancing performance, accessibility, and aesthetics."
-  // },
-  // {
-  //   id: 3,
-  //   name: 'Ms. Aisha Khan',
-  //   title: 'Bio-ethicist & Futurist, Helix Institute',
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  // },
-  // {
-  //   id: 4,
-  //   name: 'Mr. Ben Carter',
-  //   title: 'Lead UX Designer, Creative Solutions',
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  // },
-  // {
-  //   id: 5,
-  //   name: 'Dr. Elena Vance',
-  //   title: 'Climate Scientist, Terra Initiative',
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  // },
-  // {
-  //   id: 6,
-  //   name: "Mr. Lucas Zhang",
-  //   title: "Cybersecurity Expert, SecureNet",
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  // },
-  // {
-  //   id: 7,
-  //   name: "Ms. Sofia Martinez",
-  //   title: "Social Entrepreneur, ChangeMakers",
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  // },
-  // {
-  //   id: 8,
-  //   name: "Dr. Anil Mehta",
-  //   title: "Neuroscientist, BrainTech Labs",
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  // }
+  },{
+    id: 2,
+     name: 'Dr. Priya Sharma',
+     title: 'Quantum Physicist, Innovate Labs',
+     imageUrl: '/speaker_image/speaker.webp',
+     bio: "Building thoughtful web interfaces requires balancing performance, accessibility, and aesthetics."
+   },
+   {
+     id: 3,
+     name: 'Ms. Aisha Khan',
+     title: 'Bio-ethicist & Futurist, Helix Institute',
+     imageUrl: '/speaker_image/speaker.webp',
+     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+   },
+   {
+     id: 4,
+     name: 'Mr. Ben Carter',
+     title: 'Lead UX Designer, Creative Solutions',
+     imageUrl: '/speaker_image/speaker.webp',
+     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+   },
+   {
+     id: 5,
+     name: 'Dr. Elena Vance',
+     title: 'Climate Scientist, Terra Initiative',
+     imageUrl: '/speaker_image/speaker.webp',
+     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+   },
+   {
+     id: 6,
+     name: "Mr. Lucas Zhang",
+     title: "Cybersecurity Expert, SecureNet",
+     imageUrl: '/speaker_image/speaker.webp',
+     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+   },
+   {
+     id: 7,
+     name: "Ms. Sofia Martinez",
+     title: "Social Entrepreneur, ChangeMakers",
+     imageUrl: '/speaker_image/speaker.webp',
+     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+   },
+   {
+     id: 8,
+     name: "Dr. Anil Mehta",
+     title: "Neuroscientist, BrainTech Labs",
+     imageUrl: '/speaker_image/speaker.webp',
+     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  }
 ];
 
 const SpeakersSection = () => {
+  const containerRef = useRef<HTMLDivElement | null>(null);
   const swiperRef = useRef<SwiperClass | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [flip, setFlip] = useState<boolean[]>(speakers.map(() => false));
@@ -82,6 +82,26 @@ const SpeakersSection = () => {
   const [mapping, setMapping] = useState(0);
   const [direction, setDirection] = useState(0);
   const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(()=>{
+    const observer = new IntersectionObserver((entries)=>{
+      const entry = entries[0];
+      if(entry.isIntersecting){
+        swiperRef.current?.autoplay.start();
+      }else{
+        swiperRef.current?.autoplay.stop();
+      }
+    },{threshold:0.5});
+
+    if(containerRef.current){
+      observer.observe(containerRef.current);
+    }
+    return ()=>{
+      if(containerRef.current){
+        observer.unobserve(containerRef.current);
+      }
+    }
+  },[]);
 
   useEffect(() => {
     if (open) document.body.classList.add("overflow-hidden");
@@ -170,7 +190,7 @@ const SpeakersSection = () => {
           </div>
         </div>
         {/* Mobile View */}
-        <div className="flex md:hidden flex-col items-center justify-center relative mt-8 sm:mt-10 h-fit overflow-visible">
+        <div ref={containerRef} className="flex md:hidden flex-col items-center justify-center relative mt-8 sm:mt-10 h-fit overflow-visible">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             pagination={{ clickable: true }}
