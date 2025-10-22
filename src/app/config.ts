@@ -15,7 +15,7 @@ const config = {
         role: 'Design',
         imageUrl: '/images/crew/lipika.jpg',
         quote:
-          'As a Graphic Designer for TEDxVSSUT, I focus on creating visually compelling designs that reflect the spirit of innovation and storytelling that TEDx stands for. From crafting event posters and digital campaigns to developing cohesive visual themes, my goal is to capture the essence of each idea worth spreading. Working with the TEDxVSSUT team allows me to blend creativity with purpose—transforming concepts into visuals that inspire, engage, and leave a lasting impact on our audience.',
+          'As a Graphic Designer for TEDxVSSUT, I focus on creating visually compelling designs. From crafting event posters and digital campaigns to developing cohesive visual themes, my goal is to capture the essence of each idea worth spreading.',
         social: {
           facebook: 'NA',
           twitter: 'NA',
@@ -66,7 +66,7 @@ const config = {
         role: 'Social Media',
         imageUrl: '/images/crew/aishwarya.jpeg',
         quote:
-          'As a part of the Social Media Team, my role involves curating engaging content and contributing to the club’s online presence. I focus on creativity, consistency, and collaboration ensuring that every post reflects our team’s energy and vision. I enjoy exploring new ideas, experimenting with trends, and finding fresh ways to connect with our audience.',
+          'As a part of the Social Media Team, my role involves curating engaging content and contributing to the club’s online presence. ',
         social: {
           facebook: '',
           twitter: '',
@@ -83,7 +83,7 @@ const config = {
         role: 'Social Media',
         imageUrl: '/images/crew/debesh.jpg',
         quote:
-          'As a Social Media Manager, I focus on building meaningful online connections and crafting engaging digital identities. I blend creativity, storytelling, and strategy to turn ideas into impactful social media experiences.',
+          'As a Social Media Manager, I focus on building meaningful online connections and crafting engaging digital identities. ',
         social: {
           facebook: '',
           twitter: 'https://x.com/DebeshPanda8',
@@ -98,7 +98,7 @@ const config = {
         role: 'Social Media',
         imageUrl: '/images/crew/soumya.jpg',
         quote:
-          'As a part of the Social Media and Sponsorship team, I focus on building our brand presence online while forming meaningful collaborations that support our event’s vision. I work on creating engaging content that connects with the audience and reaching out to sponsors who believe in the impact we aim to create through TEDxVSSUT.',
+          'As a part of the Social Media and Sponsorship team, I focus on building our brand presence online while forming meaningful collaborations .',
         social: {
           facebook: '',
           twitter: '',
@@ -163,6 +163,23 @@ const config = {
             'https://www.instagram.com/_vibhu_26?igsh=OGlnajBvaDhqYTk%3D&utm_source=qr',
         },
       },
+      {
+        id: 2,
+        name: 'Shreyansh Agrawal',
+        role: 'Co-Organizer',
+        imageUrl: '/images/crew/shreyansh.jpg',
+        quote:
+          'As a Co-Organiser, I helped shape the event’s vision, coordinated teams, and ensured a seamless and impactful TEDx experience.',
+        social: {
+          facebook: '',
+          twitter: '',
+          linkedin:
+            'https://www.linkedin.com/in/shreyansh-agrawal-8274aa2b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+          github: '',
+          instagram:
+            'https://www.instagram.com/_lone_wolf_122?igsh=bXZlb3g5a3U4MXVp',
+        },
+      },
     ],
     'marketing_&_sponsorship': [
       {
@@ -188,7 +205,7 @@ const config = {
         role: 'Marketing & Sponsorship',
         imageUrl: '/images/crew/soumya.jpg',
         quote:
-          'As a part of the Social Media and Sponsorship team, I focus on building our brand presence online while forming meaningful collaborations that support our event’s vision. I work on creating engaging content that connects with the audience and reaching out to sponsors who believe in the impact we aim to create through TEDxVSSUT.',
+          'As a part of the Social Media and Sponsorship team, I focus on building our brand presence online while forming meaningful collaborations.',
         social: {
           facebook: '',
           twitter: '',
@@ -205,7 +222,7 @@ const config = {
         role: 'Marketing & Sponsorship',
         imageUrl: '/images/crew/ayushman.jpg',
         quote:
-          'As the Sponsorship Domain Lead at E-Cell, I specialize in building impactful brand collaborations and driving strategic partnerships. With a strong passion for entrepreneurship and business, I love exploring how innovative ideas can create real-world value. Through my role, I strive to bridge the gap between visionary brands and transformative platforms like TEDx — fostering connections that inspire growth, innovation, and purpose.',
+          'As the Sponsorship Domain Lead at E-Cell, I specialize in building impactful brand collaborations and driving strategic partnerships.',
         social: {
           facebook: '',
           twitter: '',
@@ -256,7 +273,7 @@ const config = {
         role: 'Marketing & Sponsorship',
         imageUrl: '/images/crew/tanay.jpg',
         quote:
-          'A skilled event manager, marketing strategist, and sponsorship negotiator driven by passion and intensity — channeling my strongest emotions into creativity, precision, and impact. I turn my rage and energy into results, transforming challenges into opportunities for unforgettable experiences.',
+          'A skilled event manager, marketing strategist, and sponsorship negotiator driven by passion and intensity — channeling my strongest emotions into creativity, precision, and impact.',
         social: {
           facebook: '',
           twitter: '',
@@ -272,7 +289,7 @@ const config = {
         role: 'Marketing & Sponsorship',
         imageUrl: '/images/crew/pinaki.jpg',
         quote:
-          'As part of the Marketing and Sponsorship team, I played a key role in amplifying TEDx’s reach and reputation. I always thrive on creativity, storytelling, and impactful communication — transforming ideas into engaging campaigns and collaborations that connected the event with its audience .',
+          'As part of the Marketing and Sponsorship team, I played a key role in amplifying TEDx’s reach and reputation. I always thrive on creativity, storytelling, and impactful communication — transforming ideas into engaging campaigns.',
         social: {
           facebook: '',
           twitter: 'https://x.com/pinakimishra27?t=M216_1B4e9uRMSFc7G0xYA&s=09',
@@ -287,7 +304,7 @@ const config = {
         role: 'Marketing & Sponsorship',
         imageUrl: '/images/crew/anweshapanda.jpg',
         quote:
-          'As a marketing enthusiast, I thrive on crafting strategies that connect creativity with impact. From understanding audience behavior to building strong brand narratives, I focus on delivering meaningful engagement and measurable results. I enjoy blending analytical insights with innovative ideas — because, to me, marketing isn’t just about selling; it’s about storytelling that inspires action.',
+          'As a marketing enthusiast, I thrive on crafting strategies that connect creativity with impact. From understanding audience behavior to building strong brand narratives, I focus on delivering meaningful engagement.',
         social: {
           facebook: '',
           twitter: '',
@@ -320,7 +337,7 @@ const config = {
         role: 'Marketing & Sponsorship',
         imageUrl: '/images/crew/pratikshya.jpg',
         quote:
-          'As part of the Sponsorship team for TEDx, I love the challenge of turning ideas into impactful collaborations. From reaching out to brands to crafting meaningful partnerships, my role revolves around connecting vision with value. I enjoy adding a touch of persuasion and creativity to every pitch—because every great event deserves the right support behind it!',
+          'As part of the Sponsorship team for TEDx, I love the challenge of turning ideas into impactful collaborations. From reaching out to brands to crafting meaningful partnerships, my role revolves around connecting vision with value.',
         social: {
           facebook: '',
           twitter: '',
@@ -339,7 +356,7 @@ const config = {
         role: 'Event Management',
         imageUrl: '/images/crew/sara.jpg',
         quote:
-          'As a member of the Event Management team for TEDx, I played an active role in the overall design and execution of the event. I thrive in dynamic environments that encourage creativity, collaboration, and attention to detail. My experience has strengthened my skills in planning, coordination, and problem-solving under deadlines. I am passionate about contributing innovative ideas and ensuring every project I’m part of is executed with excellence and professionalism.',
+          'As a member of the Event Management team for TEDx, I played an active role in the overall design and execution of the event. I thrive in dynamic environments that encourage creativity, collaboration, and attention to detail.',
         social: {
           facebook: '',
           twitter: '',
@@ -420,7 +437,7 @@ const config = {
         role: 'Event Management',
         imageUrl: '/images/crew/pinaki.jpg',
         quote:
-          'As part of the Marketing and Sponsorship team, I played a key role in amplifying TEDx’s reach and reputation. I always thrive on creativity, storytelling, and impactful communication — transforming ideas into engaging campaigns and collaborations that connected the event with its audience .',
+          'As part of the Marketing and Sponsorship team, I played a key role in amplifying TEDx’s reach and reputation. I always thrive on creativity, storytelling, and impactful communication — transforming ideas into engaging campaigns.',
         social: {
           facebook: '',
           twitter: 'https://x.com/pinakimishra27?t=M216_1B4e9uRMSFc7G0xYA&s=09',
@@ -435,7 +452,7 @@ const config = {
         role: 'Event Management, Marketing, Sponsorship',
         imageUrl: '/images/crew/tanay.jpg',
         quote:
-          'A skilled event manager, marketing strategist, and sponsorship negotiator driven by passion and intensity — channeling my strongest emotions into creativity, precision, and impact. I turn my rage and energy into results, transforming challenges into opportunities for unforgettable experiences.',
+          'A skilled event manager, marketing strategist, and sponsorship negotiator driven by passion and intensity — channeling my strongest emotions into creativity, precision, and impact. ',
         social: {
           facebook: '',
           twitter: '',
@@ -443,6 +460,23 @@ const config = {
           github: 'https://github.com/Tanay-369',
           instagram:
             'https://www.instagram.com/the.tanay_?igsh=cXpmMXZua2VzODB4',
+        },
+      },
+      {
+        id: 8,
+        name: 'Gurleen Kaur',
+        role: 'Event Management',
+        imageUrl: '/images/crew/gurleen.jpg',
+        quote:
+          "As an active member of E-Cell, my commitment is centered on the 'Experience': ensuring impeccable back-end coordination and delivering front-end guest care that elevates the entire attendee.",
+        social: {
+          facebook: '',
+          twitter: '',
+          linkedin:
+            'https://www.linkedin.com/in/gurleen-kaur-69a644311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+          github: '',
+          instagram:
+            'https://www.instagram.com/kudi_punjaban_55?igsh=MWY0MGFib3Roc2R0Yw==',
         },
       },
     ],
@@ -518,7 +552,7 @@ const config = {
         role: 'Public Relations',
         imageUrl: '/images/crew/adarsh.jpeg',
         quote:
-          'At TEDx, my role revolved around building meaningful connections and shaping narratives that truly resonate. I believe impactful communication goes beyond words. It’s about creating relationships, conveying ideas authentically, and leaving a lasting impression. The experience deepened my passion for storytelling and strategic outreach.',
+          'At TEDx, my role revolved around building meaningful connections and shaping narratives that truly resonate. I believe impactful communication goes beyond words.',
         social: {
           facebook: '',
           twitter: '',
@@ -569,7 +603,7 @@ const config = {
         role: 'Videography',
         imageUrl: '/images/crew/aroshree.jpg',
         quote:
-          ' As a video editor and videographer, contributing to the event’s creative vision through videography. Capturing moments, stories, and emotions through the lens, I aim to bring the spirit of our event to life for everyone who experiences it—both on and off the stage.',
+          ' As a video editor and videographer, contributing to the event’s creative vision through videography. Capturing moments, stories, and emotions through the lens.',
         social: {
           facebook: 'https://www.facebook.com/aroshree.p.sahoo',
           twitter: 'https://x.com/im_arosh',
@@ -579,8 +613,49 @@ const config = {
         },
       },
     ],
-    tech: [],
+    tech: [
+      {
+        id: 1,
+        name: 'Ayush Bardhan Tripathy',
+        role: 'Tech',
+        imageUrl: '/images/crew/ayush.jpg',
+        quote:
+          'Lead web designer, developer and web-master of TEDxVSSUT. As a core member of the Tech team, my work involves supervision and direction of all technical decisions for the event.',
+        social: {
+          facebook: '',
+          twitter: '',
+          linkedin: 'https://linkedin.com/in/ayush-bardhan-tripathy',
+          github: 'https://github.com/iddev5',
+          instagram:
+            'https://www.instagram.com/ayush_bardhan?igsh=a3BiZmc1ZWJ5YzBt',
+        },
+      },
+      {
+        id: 2,
+        name: 'Dibya Prakash Subudhi',
+        role: 'Tech',
+        imageUrl: '/images/crew/dibya.jpg',
+        quote:
+          'Co-ordinator of E-Cell, VSSUT - The primary organizing entity of TEDxVSSUT 2025.',
+        social: {
+          facebook: '',
+          twitter: '',
+          linkedin:
+            'https://www.linkedin.com/in/dibya-prakash-subudhi?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+          github: '',
+          instagram:
+            'https://www.instagram.com/avi_boy_11?igsh=aWtnbHllZDY4ZjZ2',
+        },
+      },
+    ],
   },
+  crew_carousal: {
+    images: [
+      '/images/crew/crew_carousal_1.jpg',
+      '/images/crew/crew_carousal_2.jpg',
+      '/images/crew/crew_carousal_3.jpg'
+    ]
+  }
 }
 
 export default config
