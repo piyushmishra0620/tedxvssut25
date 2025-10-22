@@ -19,7 +19,7 @@ const speakers = [
   {
     id: 1,
     name: 'Hiten Lulla',
-    title: 'Influencer',
+    title: 'Content Creator',
     imageUrl: '/speaker_image/hiten.png',
     bio: "Entrepreneurship & Technology (Influencer, known for talks on innovation and tech ecosystem)"
   },
