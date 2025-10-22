@@ -27,141 +27,146 @@ export interface crewMembers {
   }
 }
 interface Department {
-  id: number;
-  name: string;
-  members: crewMembers[];
+  id: number
+  name: string
+  members: crewMembers[]
 }
-export type { Department };
+export type { Department }
 interface CrewCardProps {
   member: crewMembers
 }
 
-export const CrewCard: React.FC<CrewCardProps> = ({ member }) =>  {
-   return (
-     <motion.div
-       key={member.id}
-       className="relative w-[180px] sm:w-[200px] md:w-[220px] lg:w-[240px]
+export const CrewCard: React.FC<CrewCardProps> = ({ member }) => {
+  return (
+    <motion.div
+      key={member.id}
+      className="relative w-[180px] sm:w-[200px] md:w-[220px] lg:w-[240px]
                  h-[280px] sm:h-[300px] md:h-[320px] lg:h-[340px]
                  bg-black rounded-lg overflow-y-hidden flex-shrink-0 hover:border-1 border-gray-300 "
-       whileHover={{ scale: 1.05 }}
-       transition={{ duration: 0.3 }}
-       initial={{scale:0.6 , opacity:0, y:100}}
-       whileInView={{scale:1, opacity:1, y:0 , 
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.3 }}
+      initial={{ scale: 0.6, opacity: 0, y: 100 }}
+      whileInView={{
+        scale: 1,
+        opacity: 1,
+        y: 0,
         transition: {
-          type:"spring",
-          stiffness:100,
-          damping:10,
-          mass:1,
-          duration:0.5
-          
-        }}}
-       viewport={{once:true, amount:0.2}}
-     >
-       <img
-         src={member.imageUrl}
-         alt={member.name}
-         className="w-full h-full object-cover hover:grayscale"
-       />
+          type: 'spring',
+          stiffness: 100,
+          damping: 10,
+          mass: 1,
+          duration: 0.5,
+        },
+      }}
+      viewport={{ once: true, amount: 0.2 }}
+    >
+      <img
+        src={member.imageUrl}
+        alt={member.name}
+        className="w-full h-full object-cover hover:grayscale"
+      />
 
-       <div className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-500 ease-in-out  bg-black/80 flex flex-col items-center justify-center p-4 space-y-3">
-         <p className="text-white text-sm leading-snug">{member.quote}</p>
+      <div className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-500 ease-in-out  bg-black/80 flex flex-col items-center justify-center p-4 space-y-3">
+        <p className="text-white text-[12px] lg:text-sm leading-snug">
+          {member.quote}
+        </p>
 
-         <div className="flex space-x-4 text-white text-xl mt-2">
-           {member?.social?.facebook && (
-             <motion.a
-               href={member.social.facebook}
-               target="_blank"
-               rel="noopener noreferrer"
-               whileHover={{ scale: 1.2 }}
-               whileTap={{ scale: 0.9 }}
-               transition={{
-                 type: 'spring',
-                 stiffness: 300,
-                 damping: 15,
-               }}
-             >
-               <BsFacebook className="hover:text-blue-500 transition-colors" />
-             </motion.a>
-           )}
+        <div className="flex space-x-4 text-white text-xl mt-2">
+          {member?.social?.facebook && (
+            <motion.a
+              href={member.social.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{
+                type: 'spring',
+                stiffness: 300,
+                damping: 15,
+              }}
+            >
+              <BsFacebook className="hover:text-blue-500 transition-colors" />
+            </motion.a>
+          )}
 
-           {member?.social?.instagram && (
-             <motion.a
-               href={member.social.instagram}
-               target="_blank"
-               rel="noopener noreferrer"
-               whileHover={{ scale: 1.2 }}
-               whileTap={{ scale: 0.9 }}
-               transition={{
-                 type: 'spring',
-                 stiffness: 300,
-                 damping: 15,
-               }}
-             >
-               <BsInstagram className="hover:text-pink-500 transition-colors" />
-             </motion.a>
-           )}
+          {member?.social?.instagram && (
+            <motion.a
+              href={member.social.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{
+                type: 'spring',
+                stiffness: 300,
+                damping: 15,
+              }}
+            >
+              <BsInstagram className="hover:text-pink-500 transition-colors" />
+            </motion.a>
+          )}
 
-           {member?.social?.twitter && (
-             <motion.a
-               href={member.social.twitter}
-               target="_blank"
-               rel="noopener noreferrer"
-               whileHover={{ scale: 1.2 }}
-               whileTap={{ scale: 0.9 }}
-               transition={{
-                 type: 'spring',
-                 stiffness: 300,
-                 damping: 15,
-               }}
-             >
-               <BsTwitterX className="hover:text-[#1DA1F2] transition-colors" />
-             </motion.a>
-           )}
+          {member?.social?.twitter && (
+            <motion.a
+              href={member.social.twitter}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{
+                type: 'spring',
+                stiffness: 300,
+                damping: 15,
+              }}
+            >
+              <BsTwitterX className="hover:text-[#1DA1F2] transition-colors" />
+            </motion.a>
+          )}
 
-           {member?.social?.linkedin && (
-             <motion.a
-               href={member.social.linkedin}
-               target="_blank"
-               rel="noopener noreferrer"
-               whileHover={{ scale: 1.2 }}
-               whileTap={{ scale: 0.9 }}
-               transition={{
-                 type: 'spring',
-                 stiffness: 300,
-                 damping: 15,
-               }}
-             >
-               <BsLinkedin className="hover:text-blue-400 transition-colors" />
-             </motion.a>
-           )}
+          {member?.social?.linkedin && (
+            <motion.a
+              href={member.social.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{
+                type: 'spring',
+                stiffness: 300,
+                damping: 15,
+              }}
+            >
+              <BsLinkedin className="hover:text-blue-400 transition-colors" />
+            </motion.a>
+          )}
 
-           {member?.social?.github && (
-             <motion.a
-               href={member.social.github}
-               target="_blank"
-               rel="noopener noreferrer"
-               whileHover={{ scale: 1.2 }}
-               whileTap={{ scale: 0.9 }}
-               transition={{
-                 type: 'spring',
-                 stiffness: 300,
-                 damping: 15,
-               }}
-             >
-               <BsGithub className="hover:text-gray-400 transition-colors" />
-             </motion.a>
-           )}
-         </div>
-       </div>
+          {member?.social?.github && (
+            <motion.a
+              href={member.social.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{
+                type: 'spring',
+                stiffness: 300,
+                damping: 15,
+              }}
+            >
+              <BsGithub className="hover:text-gray-400 transition-colors" />
+            </motion.a>
+          )}
+        </div>
+      </div>
 
-       <div className="absolute bottom-0 left-0 right-0 bg-black/90 text-center py-2">
-         <h3 className="text-red-500 font-bold text-sm sm:text-base">
-           {member.name}
-         </h3>
-         <p className="text-white text-xs sm:text-sm">{member.role}</p>
-       </div>
-     </motion.div>
-   )
+      <div className="absolute bottom-0 left-0 right-0 bg-black/90 text-center py-2">
+        <h3 className="text-red-500 font-bold text-sm sm:text-base">
+          {member.name}
+        </h3>
+        <p className="text-white text-xs sm:text-sm">{member.role}</p>
+      </div>
+    </motion.div>
+  )
 }
 
 const CrewSection = () => {
@@ -203,4 +208,4 @@ const CrewSection = () => {
   )
 }
 
-export default CrewSection;
+export default CrewSection
