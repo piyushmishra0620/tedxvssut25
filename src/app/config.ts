@@ -618,7 +618,7 @@ const config = {
         id: 1,
         name: 'Ayush Bardhan Tripathy',
         role: 'Tech',
-        imageUrl: '/images/crew/ayush.jpg',
+        imageUrl: '/images/crew/ayush.JPG',
         quote:
           'Lead web designer, developer and web-master of TEDxVSSUT. As a core member of the Tech team, my work involves supervision and direction of all technical decisions for the event.',
         social: {
