@@ -1,14 +1,15 @@
 .info-section-container {
   /* Using approximate dimensions and styling from the image */
+  position: relative;
   width: 100vw;
   margin: 0 auto;
   padding: 80px 15vw; /* Vertical and horizontal padding */
-  background-color: #121212; /* Or your page's dark background color */
   font-family: 'Lato', sans-serif;
   box-sizing: border-box;
 }
 
 .info-grid {
+  position: relative;
   display: grid;
   /* Creates three equal-width columns for the cards */
   grid-template-columns: repeat(3, 1fr);

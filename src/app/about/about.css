@@ -1,0 +1,18 @@
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100vw - 100%));
+    }
+}
+
+.animate-image {
+    animation: move 20s linear;
+    animation-iteration-count: infinite;
+}
+
+.animate-reverse {
+    animation-direction: reverse;
+}
