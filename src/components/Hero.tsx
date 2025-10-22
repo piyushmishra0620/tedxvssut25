@@ -137,7 +137,7 @@ const Hero = () => {
           className='absolute bottom-[20%] left-[50%] -translate-x-[50%] bg-white hover:bg-gray-200 hover:scale-110 transition-all text-black text-medium text-lg p-3 px-7 rounded-md z-[70]'
           style={{ opacity }}
         >
-          Book Tickets
+          Book Passes
         </motion.a>
       </div>
     </div>

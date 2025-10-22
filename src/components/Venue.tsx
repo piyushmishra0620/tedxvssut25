@@ -72,7 +72,7 @@ const EventVenue = () => {
               </p>
               <div className='flex md:justify-start justify-center'>
                 <Link href='/get-tickets' className="bg-white text-black px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-600 hover:text-white transition-colors">
-                  Book Tickets
+                  Book Passes
                 </Link>
               </div>
             </div>
