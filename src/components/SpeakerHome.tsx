@@ -23,6 +23,13 @@ const speakers = [
     imageUrl: '/speaker_image/hiten.png',
     bio: "Entrepreneurship & Technology (Influencer, known for talks on innovation and tech ecosystem)"
   },
+  {
+    id: 2,
+    name: 'Ranjan Panda',
+    title: 'Social Ecologist',
+    imageUrl: '/speaker_image/ranjan.jpeg',
+    bio: 'Water Conservation & Climate Policy (Water Man of Odisha, Environmentalist and Climate Activist)',
+  },
   // {
   //   id: 2,
   //   name: 'Dr. Priya Sharma',
