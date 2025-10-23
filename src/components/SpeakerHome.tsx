@@ -9,8 +9,8 @@ import Link from 'next/link';
 import Image from "next/image";
 import { BoldIcon, ImageUp } from 'lucide-react';
 import type { Swiper as SwiperClass } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide, } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -89,6 +89,7 @@ const speakers = [
 ];
 
 const SpeakersSection = () => {
+  const containerRef = useRef<HTMLDivElement | null>(null);
   const swiperRef = useRef<SwiperClass | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [flip, setFlip] = useState<boolean[]>(speakers.map(() => false));
@@ -96,6 +97,26 @@ const SpeakersSection = () => {
   const [mapping, setMapping] = useState(0);
   const [direction, setDirection] = useState(0);
   const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(()=>{
+    const observer = new IntersectionObserver((entries)=>{
+      const entry = entries[0];
+      if(entry.isIntersecting){
+        swiperRef.current?.autoplay.start();
+      }else{
+        swiperRef.current?.autoplay.stop();
+      }
+    },{threshold:0.5});
+
+    if(containerRef.current){
+      observer.observe(containerRef.current);
+    }
+    return ()=>{
+      if(containerRef.current){
+        observer.unobserve(containerRef.current);
+      }
+    }
+  },[]);
 
   useEffect(() => {
     if (open) document.body.classList.add("overflow-hidden");
@@ -110,9 +131,19 @@ const SpeakersSection = () => {
     });
   }
 
+  function cardClickHandler() {
+    if (swiperRef.current) {
+      if (!(swiperRef.current.autoplay.paused)) {
+        swiperRef.current.autoplay.pause();
+      } else {
+        swiperRef.current.autoplay.resume();
+      }
+    }
+  }
+
   return (
     <section id='speakers' className="bg-black text-white py-8 md:py-10 font-sans overflow-hidden relative">
-      <div className="container mx-auto max-xl:pl-[0px] max-xl:pr-[0px] max-[1535px]:pr-[40px] max-[1700px]:pr-[60px] max-[1700px]:pl-[125px] text-center pr-4 relative h-fit">
+      <div className="container z-[110] mx-auto max-xl:pl-[0px] max-xl:pr-[0px] max-[1535px]:pr-[40px] max-[1700px]:pr-[60px] max-[1700px]:pl-[125px] text-center pr-4 relative h-fit">
         {/* Title */}
         <h2 className="text-2xl sm:text-3xl md:text-5xl font-light uppercase tracking-widest">
           Meet Our <span className="font-bold text-red-600">Speakers</span>
@@ -133,7 +164,7 @@ const SpeakersSection = () => {
               >
                 <div className="group perspective order-none min-w-[40%] sm:min-w-[45%] md:min-w-[50%] lg:w-[320px] xl:w-[350px] h-[300px] sm:h-[340px] md:h-[360px] lg:h-[400px] rounded-xl overflow-hidden">
                   <div
-                    className="relative w-full h-full transition-transform  transform-style-preserve-3d group-hover:rotate-y-180 duration-200 ease-out cursor-pointer border-2 border-gray-300 rounded-xl"
+                    className="relative w-full h-full transition-transform  transform-style-preserve-3d group-hover:rotate-y-180 duration-500 ease-out cursor-pointer border-2 border-gray-300 rounded-xl"
                     onMouseEnter={() => setActiveIndex(i)}
                   >
                     {/* FRONT SIDE */}
@@ -174,9 +205,9 @@ const SpeakersSection = () => {
           </div>
         </div>
         {/* Mobile View */}
-        <div className="flex md:hidden flex-col items-center justify-center relative mt-8 sm:mt-10 h-fit overflow-visible">
+        <div ref={containerRef} className="flex md:hidden flex-col items-center justify-center relative mt-8 sm:mt-10 h-fit overflow-visible">
           <Swiper
-            modules={[Navigation, Pagination]}
+            modules={[Navigation, Pagination, Autoplay]}
             pagination={{ clickable: true }}
             navigation={{
               nextEl: '.nextButton',
@@ -186,6 +217,9 @@ const SpeakersSection = () => {
             onSlideChange={(swiper) => { setMapping(swiper.activeIndex); }}
             slidesPerView={1}
             watchOverflow={true}
+            autoplay={{
+              delay: 1500
+            }}
             className="w-full h-full pb-8 overflow-visible"
           >
             {speakers.map((speaker, index) => {
@@ -193,9 +227,9 @@ const SpeakersSection = () => {
                 <SwiperSlide key={speaker.id}>
                   <div className="flex justify-center items-center h-full">
                     <div
-                      className="relative w-[300px] sm:w-[340px] h-[360px] sm:h-[380px]  overflow-hidden cursor-pointer perspective"
+                      className="relative w-[300px] sm:w-[340px] h-[360px] sm:h-[380px]  overflow-hidden cursor-pointer perspective" onClick={() => cardClickHandler()}
                     >
-                      <div className={`absolute inset-0 border-[0.6px] border-gray-300 rounded-xl transform-3d duration-300 ease-in-out transition-transform ${flip[index] ? "rotate-y-180" : ""}`} onClick={() => toggleHandle(index)}>
+                      <div className={`absolute inset-0 border-[0.6px] border-gray-300 rounded-xl transform-3d duration-500 ease-out transition-transform ${flip[index] ? "rotate-y-180" : ""}`} onClick={() => toggleHandle(index)}>
                         {/* FRONT SIDE */}
                         <div className={`absolute inset-0 backface-hidden rounded-xl overflow-hidden ${flip[index] ? "rotate-y-180" : "rotate-y-0"}`}>
                           <img
