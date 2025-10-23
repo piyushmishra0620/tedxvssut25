@@ -7,7 +7,7 @@ import { motion, AnimatePresence, useScroll } from 'framer-motion';
 import { GrFormNext, GrFormPrevious, GrClose } from 'react-icons/gr';
 import Link from 'next/link';
 import Image from "next/image";
-import { BoldIcon } from 'lucide-react';
+import { BoldIcon, ImageUp } from 'lucide-react';
 import type { Swiper as SwiperClass } from 'swiper';
 import { Swiper, SwiperSlide, } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
@@ -22,55 +22,70 @@ const speakers = [
     title: 'Content Creator',
     imageUrl: '/speaker_image/hiten.png',
     bio: "Entrepreneurship & Technology (Influencer, known for talks on innovation and tech ecosystem)"
-  }/*,{
+  },
+  {
     id: 2,
-     name: 'Dr. Priya Sharma',
-     title: 'Quantum Physicist, Innovate Labs',
-     imageUrl: '/speaker_image/speaker.webp',
-     bio: "Building thoughtful web interfaces requires balancing performance, accessibility, and aesthetics."
-   },
-   {
-     id: 3,
-     name: 'Ms. Aisha Khan',
-     title: 'Bio-ethicist & Futurist, Helix Institute',
-     imageUrl: '/speaker_image/speaker.webp',
-     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-   },
-   {
-     id: 4,
-     name: 'Mr. Ben Carter',
-     title: 'Lead UX Designer, Creative Solutions',
-     imageUrl: '/speaker_image/speaker.webp',
-     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-   },
-   {
-     id: 5,
-     name: 'Dr. Elena Vance',
-     title: 'Climate Scientist, Terra Initiative',
-     imageUrl: '/speaker_image/speaker.webp',
-     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-   },
-   {
-     id: 6,
-     name: "Mr. Lucas Zhang",
-     title: "Cybersecurity Expert, SecureNet",
-     imageUrl: '/speaker_image/speaker.webp',
-     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-   },
-   {
-     id: 7,
-     name: "Ms. Sofia Martinez",
-     title: "Social Entrepreneur, ChangeMakers",
-     imageUrl: '/speaker_image/speaker.webp',
-     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-   },
-   {
-     id: 8,
-     name: "Dr. Anil Mehta",
-     title: "Neuroscientist, BrainTech Labs",
-     imageUrl: '/speaker_image/speaker.webp',
-     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  }*/
+    name: 'Ranjan Panda',
+    title: 'Social Ecologist',
+    imageUrl: '/speaker_image/ranjan.jpeg',
+    bio: 'Water Conservation & Climate Policy (Water Man of Odisha, Environmentalist and Climate Activist)',
+  },
+  {
+    id: 3,
+    name: 'Maj Prajakta Desai',
+    title: 'Defence',
+    imageUrl: '/speaker_image/prajakta desai.png',
+    bio: 'Leadership & Defence Motivation (Ex-Army Officer, Motivational Speaker, Leadership and Discipline Mentor)',
+  }
+  // {
+  //   id: 2,
+  //   name: 'Dr. Priya Sharma',
+  //   title: 'Quantum Physicist, Innovate Labs',
+  //   imageUrl: '/speaker_image/speaker.webp',
+  //   bio: "Building thoughtful web interfaces requires balancing performance, accessibility, and aesthetics."
+  // },
+  // {
+  //   id: 3,
+  //   name: 'Ms. Aisha Khan',
+  //   title: 'Bio-ethicist & Futurist, Helix Institute',
+  //   imageUrl: '/speaker_image/speaker.webp',
+  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  // },
+  // {
+  //   id: 4,
+  //   name: 'Mr. Ben Carter',
+  //   title: 'Lead UX Designer, Creative Solutions',
+  //   imageUrl: '/speaker_image/speaker.webp',
+  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  // },
+  // {
+  //   id: 5,
+  //   name: 'Dr. Elena Vance',
+  //   title: 'Climate Scientist, Terra Initiative',
+  //   imageUrl: '/speaker_image/speaker.webp',
+  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  // },
+  // {
+  //   id: 6,
+  //   name: "Mr. Lucas Zhang",
+  //   title: "Cybersecurity Expert, SecureNet",
+  //   imageUrl: '/speaker_image/speaker.webp',
+  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  // },
+  // {
+  //   id: 7,
+  //   name: "Ms. Sofia Martinez",
+  //   title: "Social Entrepreneur, ChangeMakers",
+  //   imageUrl: '/speaker_image/speaker.webp',
+  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  // },
+  // {
+  //   id: 8,
+  //   name: "Dr. Anil Mehta",
+  //   title: "Neuroscientist, BrainTech Labs",
+  //   imageUrl: '/speaker_image/speaker.webp',
+  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  // }
 ];
 
 const SpeakersSection = () => {
