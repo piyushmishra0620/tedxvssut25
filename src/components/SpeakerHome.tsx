@@ -203,8 +203,7 @@ const SpeakersSection = () => {
             slidesPerView={1}
             watchOverflow={true}
             autoplay={{
-              delay: 1500,
-              disableOnInteraction: true
+              delay: 1500
             }}
             className="w-full h-full pb-8 overflow-visible"
           >
