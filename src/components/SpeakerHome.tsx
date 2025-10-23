@@ -22,7 +22,7 @@ const speakers = [
     title: 'Content Creator',
     imageUrl: '/speaker_image/hiten.png',
     bio: "Entrepreneurship & Technology (Influencer, known for talks on innovation and tech ecosystem)"
-  },{
+  }/*,{
     id: 2,
      name: 'Dr. Priya Sharma',
      title: 'Quantum Physicist, Innovate Labs',
@@ -70,7 +70,7 @@ const speakers = [
      title: "Neuroscientist, BrainTech Labs",
      imageUrl: '/speaker_image/speaker.webp',
      bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  }
+  }*/
 ];
 
 const SpeakersSection = () => {
