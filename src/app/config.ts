@@ -484,7 +484,7 @@ const config = {
       {
         id: 1,
         name: 'Aurosish Kumar Guru',
-        role: 'Public Relations',
+        role: 'Public Relation and Curation',
         imageUrl: '/images/crew/aurosish.jpg',
         quote:
           "Something that caught your eye? Me and my team would be it's curators.",
@@ -501,7 +501,7 @@ const config = {
       {
         id: 2,
         name: 'Shreyas Dash',
-        role: 'Public Relations',
+        role: 'Public Relation and Curation',
         imageUrl: '/images/crew/shreyas.jpeg',
         quote:
           'A passionate content writer with a flair for crafting impactful narratives that connect and inspire.\nAn engaging public speaker who brings ideas to life with clarity, confidence, and authenticity',
@@ -519,7 +519,7 @@ const config = {
       {
         id: 3,
         name: 'Ayush Kishan',
-        role: 'Public Relations',
+        role: 'Public Relation and Curation',
         imageUrl: '/images/crew/ayush.png',
         quote: 'Curating moments that matter',
         social: {
@@ -533,7 +533,7 @@ const config = {
       {
         id: 4,
         name: 'Hara Prasad Rout',
-        role: 'Public Relations',
+        role: 'Public Relation and Curation',
         imageUrl: '/images/crew/hara.jpg',
         quote:
           'From handling content writings to guest approaches, my role involves maintaining the public reach of the events and the entire curation process.',
@@ -549,7 +549,7 @@ const config = {
       {
         id: 5,
         name: 'Adarsh Ray',
-        role: 'Public Relations',
+        role: 'Public Relation and Curation',
         imageUrl: '/images/crew/adarsh.jpeg',
         quote:
           'At TEDx, my role revolved around building meaningful connections and shaping narratives that truly resonate. I believe impactful communication goes beyond words.',
