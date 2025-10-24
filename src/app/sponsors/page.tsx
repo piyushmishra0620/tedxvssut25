@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Sponsorship from "@/components/Sponsorship";
 
 // --- TYPES ---
 // Naye sponsors ke liye type
@@ -234,10 +235,16 @@ const SponsorsSection: React.FC = () => {
   const totalWidth = duplicatedSponsors.length * (112 + 24); // 112px (w-28) + 24px (gap-6)
 
   return (
-    // Using bg-black (#000000) from the palette
+     
     <div className="w-full bg-black py-8 overflow-hidden">
+      
+      <section className="pb-12 md:pb-16">
+        <div className="container mx-auto px-6">
+          <Sponsorship />
+        </div>
+      </section>
+
       {/* === SECTION 1: CURRENT SPONSORS === */}
-      {/* Using bg-black (#000000) and text-white (#FFFFFF) from the palette */}
       <section id="sponsors" className="py-16 md:py-20 bg-black text-white">
         <div className="container mx-auto px-6">
           <div className="flex flex-col items-center mb-12">
@@ -274,6 +281,7 @@ const SponsorsSection: React.FC = () => {
         </div>
       </section>
 
+      {/* === SECTION 2: PAST SPONSORS === */}
       <div className="relative mt-8">
         <div className="flex flex-col md:flex-row items-center gap-8 px-4">
           {/* Title on the left */}
@@ -317,11 +325,12 @@ const SponsorsSection: React.FC = () => {
             </div>
 
             <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-black to-transparent pointer-events-none"></div>
-            <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-black to-transparent pointer-events-none"></div>
+            <div className="absolute top-0 right-0 w-3de2 h-full bg-gradient-to-l from-black to-transparent pointer-events-none"></div>
           </div>
         </div>
       </div>
     </div>
+    
   );
 };
 
