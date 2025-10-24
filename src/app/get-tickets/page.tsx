@@ -11,13 +11,13 @@ const ticketOptions = [
     title: "Executive Pass",
     description: "T-Shirt + Executive Lunch + Goodies",
     price: "₹700",
-    audience: "For VSSUT Students",
+    audience: "For VSSUT Students and Alumni",
     icon: <FaUsers size={32} />,
     link: "https://rzp.io/rzp/F9boP7p"
   },
   {
     title: "Only Merchandise",
-    description: "TEDxVSSUT T-Shirt + Goodies",
+    description: "TEDxVSSUT T-Shirt (This is NOT a pass to attend the event)",
     price: "₹520",
     audience: "For VSSUT Students",
     icon: <TbShirtFilled size={32} />,
