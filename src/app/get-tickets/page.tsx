@@ -9,7 +9,7 @@ import Link from "next/link";
 const ticketOptions = [
   {
     title: "Executive Pass",
-    description: "T-Shirt + Executive Lunch + Goodies",
+    description: "T-Shirt + Executive Lunch + Goodies + Certificate",
     price: "₹700",
     audience: "For VSSUT Students and Alumni",
     icon: <FaUsers size={32} />,
