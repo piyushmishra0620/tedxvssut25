@@ -325,7 +325,7 @@ const SponsorsSection: React.FC = () => {
             </div>
 
             <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-black to-transparent pointer-events-none"></div>
-            <div className="absolute top-0 right-0 w-3de2 h-full bg-gradient-to-l from-black to-transparent pointer-events-none"></div>
+            <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-black to-transparent pointer-events-none"></div>
           </div>
         </div>
       </div>
