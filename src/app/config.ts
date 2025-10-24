@@ -58,6 +58,23 @@ const config = {
           instagram: 'https://www.instagram.com/rajibalochan_34/',
         },
       },
+      {
+        id: 4,
+        name: 'Bismita Swain',
+        role: 'Design',
+        imageUrl: '/images/crew/bismita.jpg',
+        quote:
+          'As a graphic designer, I may not have designed a lot, but I made sure each one was thoughtful and impactful. I also contributed by guiding and helping the team throughout the process, ensuring that our designs stayed consistent and creative.',
+        social: {
+          facebook: '',
+          twitter: '',
+          linkedin:
+            'https://www.linkedin.com/in/bismita-swain-42017928a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+          github: '',
+          instagram:
+            'https://www.instagram.com/bismitaaswain?igsh=ZjZxY3hveHFycHpu',
+        },
+      },
     ],
     social_media: [
       {
@@ -143,13 +160,46 @@ const config = {
             'https://www.instagram.com/archit_panigrahi_?igsh=N3d4bjNoNXczdXFi',
         },
       },
+      {
+        id: 6,
+        name: 'Pragnya Parimita Sahu',
+        role: 'Social Media',
+        imageUrl: '/images/crew/pragnya.jpg',
+        quote:
+          'As a member of the social media domain, I amplified the TEDx message through engaging content and strategic online presence.',
+        social: {
+          facebook: '',
+          twitter: '',
+          linkedin:
+            'https://www.linkedin.com/in/pragnya-sahu-078203200?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+          github: '',
+          instagram:
+            'https://www.instagram.com/pragnyanyways_?igsh=eGFoazlwOWRxenZu',
+        },
+      },
+      {
+        id: 7,
+        name: 'Toshika Mishra',
+        role: 'Social Media',
+        imageUrl: '/images/crew/toshika.jpg',
+        quote:
+          'As a member of the social media domain, I focus on creating engaging and meaningful content that connects with our audience.',
+        social: {
+          facebook: '',
+          twitter: '',
+          linkedin:
+            'https://www.linkedin.com/in/toshika-mishra-392346316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+          github: '',
+          instagram: '',
+        },
+      },
     ],
     organizers: [
       {
         id: 1,
         name: 'Bibhu Prasad Kar',
-        role: 'Organizer',
-        imageUrl: '/images/crew/bibhu.jpeg',
+        role: 'Licensee and Organiser',
+        imageUrl: '/images/crew/bibhu.jpg',
         quote:
           'As the licensee and organiser, my role is to oversee the smooth execution of the event and ensure its overall success.',
         social: {
@@ -285,19 +335,22 @@ const config = {
       },
       {
         id: 7,
-        name: 'Pinaki Mishra',
+        name: 'Aayush Kumar Giri',
         role: 'Marketing & Sponsorship',
-        imageUrl: '/images/crew/pinaki.jpg',
+        imageUrl: '/images/crew/aayush.jpg',
         quote:
-          'As part of the Marketing and Sponsorship team, I played a key role in amplifying TEDx’s reach and reputation. I always thrive on creativity, storytelling, and impactful communication — transforming ideas into engaging campaigns.',
+          'As a member of the Video Editing and Marketing team at TEDx, my role was eminent in creating compelling visual content and managing digital outreach to amplify the ideas worth spreading.',
         social: {
           facebook: '',
-          twitter: 'https://x.com/pinakimishra27?t=M216_1B4e9uRMSFc7G0xYA&s=09',
-          linkedin: 'https://www.linkedin.com/in/pinaki-mishra-0b694b297/',
+          twitter: '',
+          linkedin:
+            'https://www.linkedin.com/in/aayush-kumar-giri-1b4b01284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
           github: '',
-          instagram: 'https://www.instagram.com/pinakimishra27/',
+          instagram:
+            'https://www.instagram.com/_aayush_00_4?igsh=MWptd2c2ZWIzZjJkYw==',
         },
       },
+
       {
         id: 8,
         name: 'Anwesha Panda',
@@ -346,6 +399,21 @@ const config = {
           github: '',
           instagram:
             'https://www.instagram.com/prati_kshya04?igsh=OWw5OWRzNnZqNDc5',
+        },
+      },
+      {
+        id: 11,
+        name: 'Pinaki Mishra',
+        role: 'Marketing & Sponsorship',
+        imageUrl: '/images/crew/pinaki.jpg',
+        quote:
+          'As part of the Marketing and Sponsorship team, I played a key role in amplifying TEDx’s reach and reputation. I always thrive on creativity, storytelling, and impactful communication — transforming ideas into engaging campaigns.',
+        social: {
+          facebook: '',
+          twitter: 'https://x.com/pinakimishra27?t=M216_1B4e9uRMSFc7G0xYA&s=09',
+          linkedin: 'https://www.linkedin.com/in/pinaki-mishra-0b694b297/',
+          github: '',
+          instagram: 'https://www.instagram.com/pinakimishra27/',
         },
       },
     ],
@@ -565,11 +633,11 @@ const config = {
     'hospitality_&_logistics': [
       {
         id: 1,
-        name: 'Debesh Panda',
-        role: 'Social Media',
-        imageUrl: '/images/crew/debesh.jpg',
+        name: 'Siddharth Mahapatra',
+        role: 'hospitality & logistics',
+        imageUrl: '/images/crew/siddharth.jpg',
         quote:
-          'As a Social Media Manager, I focus on building meaningful online connections and crafting engaging digital identities. I blend creativity, storytelling, and strategy to turn ideas into impactful social media experiences.',
+          'As part of the TEDx Hospitality Crew, I’m responsible for ensuring a smooth and welcoming experience for all speakers, guests, and attendees by managing registrations, seating, refreshments, and backstage coordination',
         social: {
           facebook: '',
           twitter: 'https://x.com/DebeshPanda8',
@@ -612,6 +680,23 @@ const config = {
           instagram: 'https://www.instagram.com/_aroshree_prasad_',
         },
       },
+      {
+        id: 3,
+        name: 'Aayush Kumar Giri',
+        role: 'Videography',
+        imageUrl: '/images/crew/aayush.jpg',
+        quote:
+          'As a member of the Video Editing and Marketing team at TEDx, my role was eminent in creating compelling visual content and managing digital outreach to amplify the ideas worth spreading.',
+        social: {
+          facebook: '',
+          twitter: '',
+          linkedin:
+            'https://www.linkedin.com/in/aayush-kumar-giri-1b4b01284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+          github: '',
+          instagram:
+            'https://www.instagram.com/_aayush_00_4?igsh=MWptd2c2ZWIzZjJkYw==',
+        },
+      },
     ],
     tech: [
       {
@@ -647,15 +732,30 @@ const config = {
             'https://www.instagram.com/avi_boy_11?igsh=aWtnbHllZDY4ZjZ2',
         },
       },
+      {
+        id: 3,
+        name: 'Debadutta patra',
+        role: 'Tech',
+        imageUrl: '/images/crew/debadutta.jpg',
+        quote:
+          'As a Event Management member , my role is to ensure smooth event ongoing and proper logistics.',
+        social: {
+          facebook: 'https://m.facebook.com/debad.patra',
+          twitter: '',
+          linkedin: 'http://linkedin.com/in/debadutta-patra-9b0371276',
+          github: 'https://github.com/debadutta1209',
+          instagram: '',
+        },
+      },
     ],
   },
   crew_carousal: {
     images: [
       '/images/crew/crew_carousal_1.jpg',
       '/images/crew/crew_carousal_2.jpg',
-      '/images/crew/crew_carousal_3.jpg'
-    ]
-  }
+      '/images/crew/crew_carousal_3.jpg',
+    ],
+  },
 }
 
 export default config

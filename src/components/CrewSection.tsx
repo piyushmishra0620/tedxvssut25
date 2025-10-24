@@ -11,6 +11,8 @@ import {
   BsLinkedin,
   BsTwitterX,
 } from 'react-icons/bs'
+import { useEffect, useState } from 'react'
+import { MdOpacity } from 'react-icons/md'
 
 export interface crewMembers {
   id: number
@@ -37,6 +39,17 @@ interface CrewCardProps {
 }
 
 export const CrewCard: React.FC<CrewCardProps> = ({ member }) => {
+    const [isHovered, setIsHovered] = useState(false)
+    const [showOverlay, setShowOverlay] = useState(false)
+
+    const isVisible = showOverlay || isHovered
+  useEffect(() => {
+    if (showOverlay) {
+      const timer = setTimeout(() => setShowOverlay(false), 2000) 
+      return () => clearTimeout(timer) 
+    }
+  }, [showOverlay])
+
   return (
     <motion.div
       key={member.id}
@@ -66,7 +79,15 @@ export const CrewCard: React.FC<CrewCardProps> = ({ member }) => {
         className="w-full h-full object-cover hover:grayscale"
       />
 
-      <div className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-500 ease-in-out  bg-black/80 flex flex-col items-center justify-center p-4 space-y-3">
+      <motion.div
+        className="absolute inset-0 bg-black/80 flex flex-col items-center justify-center p-4 space-y-3 cursor-pointer rounded-xl"
+        onClick={() => setShowOverlay(!showOverlay)}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        animate={{ opacity: isVisible ? 1 : 0 }}
+        initial={{ opacity: 0 }}
+        transition={{ duration: 0.4, ease: 'easeInOut' }}
+      >
         <p className="text-white text-[12px] lg:text-sm leading-snug">
           {member.quote}
         </p>
@@ -157,7 +178,7 @@ export const CrewCard: React.FC<CrewCardProps> = ({ member }) => {
             </motion.a>
           )}
         </div>
-      </div>
+      </motion.div>
 
       <div className="absolute bottom-0 left-0 right-0 bg-black/90 text-center py-2">
         <h3 className="text-red-500 font-bold text-sm sm:text-base">
@@ -171,7 +192,7 @@ export const CrewCard: React.FC<CrewCardProps> = ({ member }) => {
 
 const CrewSection = () => {
   return (
-    <section className="relative bg-black text-white py-8 md:py-10 font-sans overflow-hidden lg:h-screen relative">
+    <section className=" bg-black text-white py-8 md:py-10 font-sans overflow-hidden lg:h-screen relative">
       <Image
         src='/images/background.avif'
         alt=""
@@ -182,7 +203,7 @@ const CrewSection = () => {
       <div className='absolute left-0 top-0 w-screen h-full bg-radial from-transparent to-black to-80%'></div>
       <div className="container mx-auto text-center px-4 relative">
         <h2 className="text-2xl sm:text-3xl md:text-5xl font-light uppercase tracking-widest">
-          <span className="font-bold text-red-600">Crew</span> Members
+          <span className="6font-bold text-red-600">Crew</span> Members
         </h2>
 
         <p className="max-w-2xl md:max-w-4xl mx-auto mt-8 md:mt-10 text-gray-400 text-xs sm:text-sm md:text-base leading-relaxed">
