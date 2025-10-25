@@ -36,7 +36,21 @@ const speakers = [
     title: 'Defence',
     imageUrl: '/speaker_image/prajakta desai.png',
     bio: 'Leadership & Defence Motivation (Ex-Army Officer, Motivational Speaker, Leadership and Discipline Mentor)',
-  }
+  },
+  {
+    id: 4,
+    name: 'Dr. B.K.Das Sir',
+    title: 'Scientist',
+    imageUrl: '/speaker_image/bkdas sir.jpeg',
+    bio: 'Director General, ECS, DRDO'
+  },
+  {
+    id: 5,
+    name: 'Rahul Chaudhari',
+    title: 'Sports',
+    imageUrl: '/speaker_image/rahul.jpeg',
+    bio: 'Ex-international Kabaddi Player'
+  },
   // {
   //   id: 2,
   //   name: 'Dr. Priya Sharma',
