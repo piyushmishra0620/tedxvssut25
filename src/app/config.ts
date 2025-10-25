@@ -94,7 +94,7 @@ const config = {
       },
       {
         id: 3,
-        name: 'Soumya Ranjan Mohapatra',
+        name: 'Soumya Ranjan',
         role: 'Social Media',
         imageUrl: '/images/crew/soumya.jpg',
         quote:
@@ -201,7 +201,7 @@ const config = {
       },
       {
         id: 2,
-        name: 'Soumya Ranjan Mohapatra',
+        name: 'Soumya Ranjan',
         role: 'Marketing & Sponsorship',
         imageUrl: '/images/crew/soumya.jpg',
         quote:
