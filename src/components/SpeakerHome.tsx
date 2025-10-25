@@ -9,7 +9,7 @@ import Link from 'next/link';
 import Image from "next/image";
 import { BoldIcon } from 'lucide-react';
 import type { Swiper as SwiperClass } from 'swiper';
-import { Swiper, SwiperSlide, } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -257,7 +257,7 @@ const SpeakersSection = () => {
             </button>
             <button
               disabled={mapping === 7 ? true : false}
-              className={`nextButton h-10 w-10 rounded-full flex items-center justify-center cursor-pointer bg-transparent ${mapping === 7 ? "cursor-not-allowed opacity-60" : "active:bg-red-600 opacity-100"} border-2 border-white`}
+              className={`nextButton h-10 w-10 rounded-full flex items-center justify-center cursor-pointer bg-transparent ${mapping === (speakers.length-1) ? "cursor-not-allowed opacity-60" : "active:bg-red-600 opacity-100"} border-2 border-white`}
             >
               <GrFormNext className="text-white" size={15} />
             </button>
