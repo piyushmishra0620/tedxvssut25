@@ -337,7 +337,7 @@ const config = {
         id: 7,
         name: 'Aayush Kumar Giri',
         role: 'Marketing & Sponsorship',
-        imageUrl: '/images/crew/aayush.jpg',
+        imageUrl: '/images/crew/aayush.jpeg',
         quote:
           'As a member of the Video Editing and Marketing team at TEDx, my role was eminent in creating compelling visual content and managing digital outreach to amplify the ideas worth spreading.',
         social: {
@@ -646,6 +646,38 @@ const config = {
           instagram: 'https://www.instagram.com/debesh._.panda/',
         },
       },
+      {
+        id: 2,
+        name: 'Gurleen Kaur',
+        role: 'hospitality & logistics',
+        imageUrl: '/images/crew/gurleen.jpg',
+        quote:
+          "As an active member of E-Cell, my commitment is centered on the 'Experience': ensuring impeccable back-end coordination and delivering front-end guest care that elevates the entire attendee.",
+        social: {
+          facebook: '',
+          twitter: '',
+          linkedin:
+            'https://www.linkedin.com/in/gurleen-kaur-69a644311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+          github: '',
+          instagram:
+            'https://www.instagram.com/kudi_punjaban_55?igsh=MWY0MGFib3Roc2R0Yw==',
+        },
+      },
+      {
+        id: 3,
+        name: 'Debesh Panda',
+        role: 'Social Media',
+        imageUrl: '/images/crew/debesh.jpg',
+        quote:
+          'As a Social Media Manager, I focus on building meaningful online connections and crafting engaging digital identities. ',
+        social: {
+          facebook: '',
+          twitter: 'https://x.com/DebeshPanda8',
+          linkedin: 'https://www.linkedin.com/in/debesh-kumar-panda-4a299a273/',
+          github: 'https://github.com/DebeshPanda555',
+          instagram: 'https://www.instagram.com/debesh._.panda/',
+        },
+      },
     ],
     videography: [
       {
@@ -684,7 +716,7 @@ const config = {
         id: 3,
         name: 'Aayush Kumar Giri',
         role: 'Videography',
-        imageUrl: '/images/crew/aayush.jpg',
+        imageUrl: '/images/crew/aayush.jpeg',
         quote:
           'As a member of the Video Editing and Marketing team at TEDx, my role was eminent in creating compelling visual content and managing digital outreach to amplify the ideas worth spreading.',
         social: {

@@ -267,7 +267,7 @@ export default function Index() {
             </h2>
             <div className="h-1 w-full sm:w-70 mx-auto lg:mx-3 bg-gradient-to-r from-black via-red-500 to-black" />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-18 justify-items-center">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-18 justify-items-center">
             {config.crew['hospitality_&_logistics'].map((member, i) => (
               <CrewCard key={i} member={member} />
             ))}
