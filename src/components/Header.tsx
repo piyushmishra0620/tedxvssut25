@@ -48,9 +48,9 @@ const Header = () => {
         </ul>
 
         {/* ---------- DESKTOP CTA ---------- */}
-        <Link href="/contact-us" className="hidden md:block no-underline">
+        <Link href="/get-tickets" className="hidden md:block no-underline">
           <button className="bg-transparent text-[white] cursor-pointer font-bold px-[22px] py-2.5 rounded-[5px] border-2 border-solid border-[#E62B1E] hover:bg-[#E62B1E] hover:text-[white] transition-all">
-            Contact Us
+            Book Passes
           </button>
         </Link>
 
