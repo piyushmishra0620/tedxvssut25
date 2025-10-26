@@ -9,8 +9,10 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel'
 import Autoplay from 'embla-carousel-autoplay'
+import { useState } from 'react'
 
 export default function Index() {
+  const [flippedId, setFlippedId] = useState(null)
   return (
     <div className="min-h-screen bg-black">
       <div className="relative min-h-screen bg-black overflow-hidden">
@@ -251,6 +253,22 @@ export default function Index() {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-18 justify-items-center">
             {config.crew.event_management.map((member, i) => (
+              <CrewCard key={i} member={member} />
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Core Team Section */}
+      <section className="py-12 px-4 sm:px-6 lg:py-16">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="mb-10 text-center lg:text-left ">
+            <h2 className="text-3xl sm:text-4xl  font-bold mb-4 text-red-600">
+              Hospitality & Logistics
+            </h2>
+            <div className="h-1 w-full sm:w-70 mx-auto lg:mx-3 bg-gradient-to-r from-black via-red-500 to-black" />
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-18 justify-items-center">
+            {config.crew['hospitality_&_logistics'].map((member, i) => (
               <CrewCard key={i} member={member} />
             ))}
           </div>
