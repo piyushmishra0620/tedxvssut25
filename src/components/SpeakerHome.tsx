@@ -54,19 +54,16 @@ const speakers = [
     name: 'Rahul Chaudhari',
     title: 'Sports',
     imageUrl: '/speaker_image/rahul.jpeg',
-<<<<<<< HEAD
     bio: 'Ex-international Kabaddi Player',
     Talklink: ""
-  }
-=======
-    bio: 'Ex-international Kabaddi Player'
   },
   {
     id: 6,
     name: 'Chandan Malu',
     title: 'Technology',
     imageUrl: '/speaker_image/chandan malu.jpeg',
-    bio: 'Principle Technology Architect Infosys'
+    bio: 'Principle Technology Architect Infosys',
+    Talklink:""
   },
   {
     id: 7,
@@ -74,57 +71,8 @@ const speakers = [
     title: 'Singer',
     imageUrl: '/speaker_image/krishna.jpeg',
     bio: 'Bollywood Singer',
+    Talklink:""
   }
-  // {
-  //   id: 2,
-  //   name: 'Dr. Priya Sharma',
-  //   title: 'Quantum Physicist, Innovate Labs',
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Building thoughtful web interfaces requires balancing performance, accessibility, and aesthetics."
-  // },
-  // {
-  //   id: 3,
-  //   name: 'Ms. Aisha Khan',
-  //   title: 'Bio-ethicist & Futurist, Helix Institute',
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  // },
-  // {
-  //   id: 4,
-  //   name: 'Mr. Ben Carter',
-  //   title: 'Lead UX Designer, Creative Solutions',
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  // },
-  // {
-  //   id: 5,
-  //   name: 'Dr. Elena Vance',
-  //   title: 'Climate Scientist, Terra Initiative',
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  // },
-  // {
-  //   id: 6,
-  //   name: "Mr. Lucas Zhang",
-  //   title: "Cybersecurity Expert, SecureNet",
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  // },
-  // {
-  //   id: 7,
-  //   name: "Ms. Sofia Martinez",
-  //   title: "Social Entrepreneur, ChangeMakers",
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  // },
-  // {
-  //   id: 8,
-  //   name: "Dr. Anil Mehta",
-  //   title: "Neuroscientist, BrainTech Labs",
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  // }
->>>>>>> a5444490506931c5b153f94d343e8510985a04b3
 ];
 
 const SpeakersSection = () => {
@@ -298,7 +246,7 @@ const SpeakersSection = () => {
               <GrFormPrevious className="text-white" size={15} />
             </button>
             <button
-              disabled={mapping === 7 ? true : false}
+              disabled={mapping === (speakers.length-1) ? true : false}
               className={`nextButton h-10 w-10 rounded-full flex items-center justify-center cursor-pointer bg-transparent ${mapping === (speakers.length - 1) ? "cursor-not-allowed opacity-60" : "active:bg-red-600 opacity-100"} border-2 border-white`}
             >
               <GrFormNext className="text-white" size={15} />
