@@ -238,11 +238,9 @@ const SponsorsSection: React.FC = () => {
      
     <div className="w-full bg-black py-8 overflow-hidden">
       
-      <section className="pb-12 md:pb-16">
-        <div className="container mx-auto">
-          <Sponsorship />
-        </div>
-      </section>
+      <div className="pb-12 md:pb-16">
+        <Sponsorship />
+      </div>
 
       {/* === SECTION 1: CURRENT SPONSORS === */}
       <section id="sponsors" className="py-16 md:py-20 bg-black text-white">
