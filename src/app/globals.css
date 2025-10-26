@@ -268,3 +268,40 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+ 
+@property --angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.animated-border-wrapper {
+  position: relative;
+  border-radius: 0.5rem; /* Tailwind's rounded-lg */
+  padding: 2px; /* Yeh aapke border ki motai (thickness) hai */
+  
+  background: conic-gradient(
+    from var(--angle),
+    #E62B1E, /* Bright Red from palette */
+    #B22222, /* Darker Red from palette */
+    #333333, /* Dark Gray from palette */
+    #6D6D6D, /* Medium Gray from palette */
+    #E62B1E  /* Loop complete karne ke liye */
+  );
+  
+  /* Animation jo --angle property ko 0 se 360 degree tak ghumayega */
+  animation: spin-border 5s linear infinite;
+}
+
+@keyframes spin-border {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+
+
