@@ -51,6 +51,20 @@ const speakers = [
     imageUrl: '/speaker_image/rahul.jpeg',
     bio: 'Ex-international Kabaddi Player'
   },
+  {
+    id: 6,
+    name: 'Chandan Malu',
+    title: 'Technology',
+    imageUrl: '/speaker_image/chandan malu.jpeg',
+    bio: 'Principle Technology Architect Infosys'
+  },
+  {
+    id: 7,
+    name: 'Krishna Beruaa',
+    title: 'Singer',
+    imageUrl: '/speaker_image/krishna.jpeg',
+    bio: 'Bollywood Singer',
+  }
   // {
   //   id: 2,
   //   name: 'Dr. Priya Sharma',
