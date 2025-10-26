@@ -92,9 +92,9 @@ const Header = () => {
           </ul>
 
           {/* Contact CTA */}
-          <Link href="/contact-us" onClick={() => setMenuOpen(false)}>
+          <Link href="/get-tickets" onClick={() => setMenuOpen(false)}>
             <button className="mt-12 bg-transparent text-[white] font-bold px-[22px] py-2.5 rounded-[5px] border-2 border-solid border-[#E62B1E] hover:bg-[#E62B1E] hover:text-[white] transition-all">
-              Contact Us
+              Book Passes
             </button>
           </Link>
         </div>
