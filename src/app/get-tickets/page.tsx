@@ -45,37 +45,6 @@ const Index = () => {
           Book Your Passes Now!
         </h1>
 
-        <div className="text-center">
-          <h3 className="text-lg text-[#BDBDBD] font-light mb-4">Powered By</h3>
-          <div className="flex justify-center items-center gap-6">
-            {/* Logo 1   */}
-            <div className="animated-border-wrapper">
-              <div className="bg-[#FFFFFF] rounded-md p-3 flex items-center justify-center h-16">
-                <Image
-                  src="/sponsors_image/sbi-yono-app-icon.png"
-                  alt="YONO SBI Logo"
-                  width={55}
-                  height={40}
-                  className="object-contain"
-                />
-              </div>
-            </div>
-
-            {/* Logo 2   */}
-            <div className="animated-border-wrapper">
-              <div className="bg-[#FFFFFF] rounded-md p-3 flex items-center justify-center h-16">
-                <Image
-                  src="/sponsors_image/hycred_logo.png"
-                  alt="Hycred Logo"
-                  width={55}
-                  height={40}
-                  className="object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
         <section className="w-full flex justify-center py-12 bg-gradient-to-b text-[#FFFFFF]">
           <div className="w-full max-w-xl text-center px-4">
             <motion.h3
@@ -85,7 +54,7 @@ const Index = () => {
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
               Just look at our{" "}
-              <span className="text-[#E62B1E]">Official Merchandise</span> 👕
+              <span className="text-[#E62B1E]">Official Merchandise</span>
             </motion.h3>
 
             <motion.div
