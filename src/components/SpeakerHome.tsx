@@ -72,6 +72,14 @@ const speakers = [
     imageUrl: '/speaker_image/krishna.jpeg',
     bio: 'Bollywood Singer',
     Talklink:""
+  },
+  {
+    id: 8,
+    name: 'Vedbhushan',
+    title: 'IAS',
+    imageUrl: '/speaker_image/vedbhushan.jpeg',
+    bio: 'Bureaucrat for IAS',
+    Talklink: ''
   }
 ];
 
