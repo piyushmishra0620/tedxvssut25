@@ -119,6 +119,7 @@ const Hero = () => {
         </motion.div> */}
         <motion.div style={{ opacity }}>
           <AnimatedText />
+          <p className='absolute text-white w-full font-semibold md:font-normal text-center text-sm md:text-2xl z-[50] top-[68%] left-[50%] -translate-x-[50%]'>Organized by E-CELL, VSSUT</p>
         </motion.div>
         <motion.div
           className="absolute hidden md:block w-96 h-96 top-15 left-[50%] -translate-x-[50%] bg-black rounded-full blur-3xl"

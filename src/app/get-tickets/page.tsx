@@ -118,6 +118,7 @@ const Index = () => {
         </div>
         {/* Policy Links */}
         <PolicyLinks />
+        <p className="text-justify">NOTE: Any queries previously sent to help.tedxvssut@gmail.com, please re-send to ecellvssut.tech@gmail.com</p>
       </div>
     </div>
   );
