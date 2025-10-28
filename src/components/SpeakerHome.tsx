@@ -64,6 +64,8 @@ const speakers = [
     imageUrl: '/speaker_image/chandan malu.jpeg',
     bio: 'Principle Technology Architect Infosys',
     Talklink:""
+    bio: 'Principle Technology Architect Infosys',
+    Talklink:""
   },
   {
     id: 7,
@@ -72,6 +74,14 @@ const speakers = [
     imageUrl: '/speaker_image/krishna.jpeg',
     bio: 'Bollywood Singer',
     Talklink:""
+  },
+  {
+    id: 8,
+    name: 'Vedbhushan',
+    title: 'IAS',
+    imageUrl: '/speaker_image/vedbhushan.jpeg',
+    bio: 'Bureaucrat for IAS',
+    Talklink: ''
   }
 ];
 
