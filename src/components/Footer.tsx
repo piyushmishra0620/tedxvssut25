@@ -2,6 +2,7 @@ import React from 'react';
 import { FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import Link from 'next/link';
 import config from '@/app/config';
+import Image from 'next/image';
 
 const Footer: React.FC = () => {
   return (
@@ -21,6 +22,13 @@ const Footer: React.FC = () => {
               inspiring change, and fostering innovation. Proudly hosted by Veer Surendra Sai University of
               Technology.
             </p>
+            <Image
+              src='/images/logo.png'
+              width={619}
+              height={288}
+              alt="E-Cell, VSSUT"
+              className='w-[35%] p-4 bg-linear-to-tr from-red-500/40 via-transparent to-red-500/40 rounded-lg'
+            />
           </div>
 
           {/* Column 2: Quick Links */}

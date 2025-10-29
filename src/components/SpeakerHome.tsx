@@ -1,15 +1,16 @@
 'use client';
 
 import SimpleBar from 'simplebar-react';
+import { BsInstagram, BsLinkedin, BsTwitterX, BsFacebook } from 'react-icons/bs'
 import 'simplebar-react/dist/simplebar.min.css';
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useScroll } from 'framer-motion';
 import { GrFormNext, GrFormPrevious, GrClose } from 'react-icons/gr';
 import Link from 'next/link';
 import Image from "next/image";
-import { BoldIcon, ImageUp } from 'lucide-react';
+import {LinkIcon } from 'lucide-react';
 import type { Swiper as SwiperClass } from 'swiper';
-import { Swiper, SwiperSlide, } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -21,7 +22,8 @@ const speakers = [
     name: 'Hiten Lulla',
     title: 'Content Creator',
     imageUrl: '/speaker_image/hiten.png',
-    bio: "Entrepreneurship & Technology (Influencer, known for talks on innovation and tech ecosystem)"
+    bio: "Entrepreneurship & Technology (Influencer, known for talks on innovation and tech ecosystem)",
+    Talklink: ""
   },
   {
     id: 2,
@@ -29,6 +31,7 @@ const speakers = [
     title: 'Social Ecologist',
     imageUrl: '/speaker_image/ranjan.jpeg',
     bio: 'Water Conservation & Climate Policy (Water Man of Odisha, Environmentalist and Climate Activist)',
+    Talklink: ""
   },
   {
     id: 3,
@@ -36,56 +39,48 @@ const speakers = [
     title: 'Defence',
     imageUrl: '/speaker_image/prajakta desai.png',
     bio: 'Leadership & Defence Motivation (Ex-Army Officer, Motivational Speaker, Leadership and Discipline Mentor)',
+    Talklink: ""
+  },
+  {
+    id: 4,
+    name: 'Dr. B.K.Das Sir',
+    title: 'Scientist',
+    imageUrl: '/speaker_image/bkdas sir.jpeg',
+    bio: 'Director General, ECS, DRDO',
+    Talklink: ""
+  },
+  {
+    id: 5,
+    name: 'Rahul Chaudhari',
+    title: 'Sports',
+    imageUrl: '/speaker_image/rahul.jpeg',
+    bio: 'Ex-international Kabaddi Player',
+    Talklink: ""
+  },
+  {
+    id: 6,
+    name: 'Chandan Malu',
+    title: 'Technology',
+    imageUrl: '/speaker_image/chandan malu.jpeg',
+    bio: 'Principle Technology Architect Infosys',
+    Talklink:""
+  },
+  {
+    id: 7,
+    name: 'Krishna Beruaa',
+    title: 'Singer',
+    imageUrl: '/speaker_image/krishna.jpeg',
+    bio: 'Bollywood Singer',
+    Talklink:""
+  },
+  {
+    id: 8,
+    name: 'Vedbhushan',
+    title: 'IAS',
+    imageUrl: '/speaker_image/vedbhushan.jpeg',
+    bio: 'Bureaucrat for IAS',
+    Talklink: ''
   }
-  // {
-  //   id: 2,
-  //   name: 'Dr. Priya Sharma',
-  //   title: 'Quantum Physicist, Innovate Labs',
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Building thoughtful web interfaces requires balancing performance, accessibility, and aesthetics."
-  // },
-  // {
-  //   id: 3,
-  //   name: 'Ms. Aisha Khan',
-  //   title: 'Bio-ethicist & Futurist, Helix Institute',
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  // },
-  // {
-  //   id: 4,
-  //   name: 'Mr. Ben Carter',
-  //   title: 'Lead UX Designer, Creative Solutions',
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  // },
-  // {
-  //   id: 5,
-  //   name: 'Dr. Elena Vance',
-  //   title: 'Climate Scientist, Terra Initiative',
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  // },
-  // {
-  //   id: 6,
-  //   name: "Mr. Lucas Zhang",
-  //   title: "Cybersecurity Expert, SecureNet",
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  // },
-  // {
-  //   id: 7,
-  //   name: "Ms. Sofia Martinez",
-  //   title: "Social Entrepreneur, ChangeMakers",
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  // },
-  // {
-  //   id: 8,
-  //   name: "Dr. Anil Mehta",
-  //   title: "Neuroscientist, BrainTech Labs",
-  //   imageUrl: '/speaker_image/speaker.webp',
-  //   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod temport incididunt ui labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud execitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  // }
 ];
 
 const SpeakersSection = () => {
@@ -98,25 +93,25 @@ const SpeakersSection = () => {
   const [direction, setDirection] = useState(0);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  useEffect(()=>{
-    const observer = new IntersectionObserver((entries)=>{
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
-      if(entry.isIntersecting){
+      if (entry.isIntersecting) {
         swiperRef.current?.autoplay.start();
-      }else{
+      } else {
         swiperRef.current?.autoplay.stop();
       }
-    },{threshold:0.5});
+    }, { threshold: 0.5 });
 
-    if(containerRef.current){
+    if (containerRef.current) {
       observer.observe(containerRef.current);
     }
-    return ()=>{
-      if(containerRef.current){
+    return () => {
+      if (containerRef.current) {
         observer.unobserve(containerRef.current);
       }
     }
-  },[]);
+  }, []);
 
   useEffect(() => {
     if (open) document.body.classList.add("overflow-hidden");
@@ -168,35 +163,26 @@ const SpeakersSection = () => {
                     onMouseEnter={() => setActiveIndex(i)}
                   >
                     {/* FRONT SIDE */}
-                    <div className="absolute inset-0 backface-hidden overflow-hidden rounded-xl">
+                    <div className="absolute inset-0 backface-hidden overflow-hidden rounded-xl group-hover:pointer-events-none">
                       <img
                         src={speaker.imageUrl}
                         alt={speaker.name}
                         className="w-full h-full object-cover transition-all duration-500"
                       />
                       <div className="absolute bottom-0 left-0 right-0 h-1/3 sm:h-1/2 bg-gradient-to-t from-black to-transparent pointer-events-none"></div>
-                      <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-3 md:p-2 lg:p-6 flex justify-between items-end text-white pointer-events-none">
-                        <div className="text-left">
-                          <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-snug">
-                            {speaker.name}
-                          </h3>
-                          <p className="text-[10px] sm:text-xs md:text-sm font-serif text-gray-400">
-                            {speaker.title}
-                          </p>
-                        </div>
-                      </div>
                     </div>
 
                     {/* BACK SIDE */}
-                    <div className="absolute inset-0 rotate-y-180 backface-hidden bg-black text-white rounded-xl">
-                      <h3 className="text-[25px] mt-8 mb-2 font-bold z-[30]">{speaker.name}</h3>
-                      <p className="text-[16px]   text-gray-100 font-serif z-[30]">{speaker.title}</p>
-                      <p className="text-[15px]  mt-4 px-4 text-center opacity-90 z-[30]">
-                        {speaker.bio}
-                      </p>
-                      <div className="absolute bottom-0 right-0 w-full h-full flex flex-row justify-end items-end z-[10]">
-                        <div className="bg-radial-[at_0%_0%] from-red-600 to-red-700 rounded-full p-[125px] blur-[150px]"></div>
-                      </div>
+                    <div className="absolute inset-0 rotate-y-180 backface-hidden pointer-events-auto cursor-default text-white rounded-xl">
+                        <h3 className="text-[25px] mt-8 mb-2 font-bold z-[30]">{speaker.name}</h3>
+                        <p className="text-[16px] text-gray-100 font-serif z-[30]">{speaker.title}</p>
+                        <p className="text-[15px]  mt-4 px-4 text-center opacity-90 z-[30]">
+                          {speaker.bio}
+                        </p>
+                        {speaker.Talklink?(<><h5 className="mt-[45px] text-center text-white font-semibold text-[20px]"> Watch TEDTalk </h5><div className="mt-[10px] w-full h-fit flex justify-center pointer-events-auto"><a href={speaker.Talklink} target="_blank" className="p-2 bg-transparent text-white border-3 border-white rounded-full"><LinkIcon size={19} strokeWidth={4}/></a></div></>):""}
+                        <div className="absolute bottom-0 right-0 w-full h-full flex flex-row justify-end items-end z-[10]">
+                          <div className="bg-radial-[at_0%_0%] from-red-600 to-red-700 rounded-full p-[125px] blur-[150px]"></div>
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -237,21 +223,18 @@ const SpeakersSection = () => {
                             alt={speaker.name}
                             className="w-full h-full object-cover rounded-xl"
                           />
-                          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/70 to-transparent p-4 text-white flex justify-between items-end" >
-                            <div className="text-left">
-                              <h3 className="text-lg font-bold">{speaker.name}</h3>
-                              <p className="text-xs text-gray-300 font-serif">{speaker.title}</p>
-                            </div>
-                          </div>
+                          <div className="absolute right-0 bottom-0 bg-gradient-to-t w-full h-1/3 from-black to-transparent"></div>
                         </div>
 
                         {/* BACK SIDE */}
-                        <div className="absolute inset-0 rotate-y-180 backface-hidden bg-black  text-white p-4 rounded-xl overflow-hidden">
+                        <div className="absolute inset-0 rotate-y-180 backface-hidden bg-black  text-white p-4 rounded-xl overflow-hidden cursor-default">
                           <h3 className="text-[21px]  font-bold mt-5 mb-2 z-[90]">{speaker.name}</h3>
-                          <p className="text-[14px] text-gray-100 font-serif z-[90]">{speaker.title}</p>
+                          <p className="text-[16px] text-gray-100 font-serif z-[90]">{speaker.title}</p>
                           <p className="text-[14px]  mt-2 text-center opacity-90 z-[90]">{speaker.bio}</p>
+                          {speaker.Talklink?(<><h5 className="mt-[45px] text-center text-gray-50 font-semibold text-[18px]"> Watch TEDTalk </h5><div className="mt-[10px] w-full h-fit flex justify-center pointer-events-auto"><a href={speaker.Talklink} target="_blank" className="p-2 bg-transparent text-white border-2 border-white rounded-full"><LinkIcon size={19} strokeWidth={3}/></a></div></>):""}
                           <div className="w-full h-full flex flex-row justify-end items-center z-[10]">
-                            <div className="bg-radial-[at_0%_0%] from-red-500 to-red-700 rounded-full p-[150px] blur-[250px]"></div>
+                            <div className="bg-radial-[at_0%_0%] from-red-500 to-red-700 rounded-full p-[150px] blur-[250px]">
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -271,8 +254,8 @@ const SpeakersSection = () => {
               <GrFormPrevious className="text-white" size={15} />
             </button>
             <button
-              disabled={mapping === 7 ? true : false}
-              className={`nextButton h-10 w-10 rounded-full flex items-center justify-center cursor-pointer bg-transparent ${mapping === 7 ? "cursor-not-allowed opacity-60" : "active:bg-red-600 opacity-100"} border-2 border-white`}
+              disabled={mapping === (speakers.length-1) ? true : false}
+              className={`nextButton h-10 w-10 rounded-full flex items-center justify-center cursor-pointer bg-transparent ${mapping === (speakers.length - 1) ? "cursor-not-allowed opacity-60" : "active:bg-red-600 opacity-100"} border-2 border-white`}
             >
               <GrFormNext className="text-white" size={15} />
             </button>
