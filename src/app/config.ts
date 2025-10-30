@@ -215,21 +215,38 @@ const config = {
       },
       {
         id: 2,
-        name: 'Shreyansh Agrawal',
-        role: 'Co-Organizer',
-        imageUrl: '/images/crew/shreyansh.jpg',
+        name: 'Soumya Ranjan',
+        role: 'Co-organizer',
+        imageUrl: '/images/crew/soumya.jpg',
         quote:
-          'As a Co-Organiser, I helped shape the event’s vision, coordinated teams, and ensured a seamless and impactful TEDx experience.',
+          'As a part of the Social Media and Sponsorship team, I focus on building our brand presence online while forming meaningful collaborations.',
         social: {
           facebook: '',
           twitter: '',
           linkedin:
-            'https://www.linkedin.com/in/shreyansh-agrawal-8274aa2b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+            'https://www.linkedin.com/in/soumya-ranjan-mohapatra-b4a23b317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
           github: '',
           instagram:
-            'https://www.instagram.com/_lone_wolf_122?igsh=bXZlb3g5a3U4MXVp',
+            'https://www.instagram.com/soumya.__09?igsh=dXc5bWRnbTJveDN0',
         },
       },
+      // {
+      //   id: 2,
+      //   name: 'Shreyansh Agrawal',
+      //   role: 'Co-Organizer',
+      //   imageUrl: '/images/crew/shreyansh.jpg',
+      //   quote:
+      //     'As a Co-Organiser, I helped shape the event’s vision, coordinated teams, and ensured a seamless and impactful TEDx experience.',
+      //   social: {
+      //     facebook: '',
+      //     twitter: '',
+      //     linkedin:
+      //       'https://www.linkedin.com/in/shreyansh-agrawal-8274aa2b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      //     github: '',
+      //     instagram:
+      //       'https://www.instagram.com/_lone_wolf_122?igsh=bXZlb3g5a3U4MXVp',
+      //   },
+      // },
     ],
     'marketing_&_sponsorship': [
       {
