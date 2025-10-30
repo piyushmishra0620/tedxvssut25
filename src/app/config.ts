@@ -210,6 +210,22 @@ const config = {
           instagram: '',
         },
       },
+      {
+        id: 8,
+        name: 'Amrut Sharma',
+        role: 'Social Media',
+        imageUrl: '/images/crew/amrut.jpg',
+        quote: 
+          'As part of the Social Media team, I craft digital stories that reflect our vision. From posts to partnerships, I focus on turning ideas into conversations that travel far beyond the screen.',
+        social: {
+          facebook: '',
+          twitter: '',
+          linkedin:
+            'https://www.linkedin.com/in/amrut-sharma-7731a2314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+          github: '',
+          instagram: 'https://www.instagram.com/_.amrut18._?igsh=MTFwNTMwZTBrM2VtdA%3D%3D&utm_source=qr',
+        },
+      }
     ],
     organizers: [
       {
