@@ -75,6 +75,23 @@ const config = {
             'https://www.instagram.com/bismitaaswain?igsh=ZjZxY3hveHFycHpu',
         },
       },
+      {
+        id: 5,
+        name: 'Suman Sekhar Mohanty',
+        role: 'Design',
+        imageUrl: '/images/crew/suman.jpg',
+        quote:
+          'Designed the official TEDxVSSUT 2025 website, focusing on modern UI/UX and a seamless event experience.',
+        social: {
+          facebook: '',
+          twitter: '',
+          linkedin:
+            'https://www.linkedin.com/in/suman-sekhar-mohanty-a16b54291/',
+          github: 'https://github.com/Suman-Sekhar-003',
+          instagram:
+            'https://www.instagram.com/_sekhar_suman__?igsh=MTVybzhldjRzNnlqNQ==',
+        },
+      },
     ],
     social_media: [
       {
@@ -794,6 +811,23 @@ const config = {
           linkedin: 'http://linkedin.com/in/debadutta-patra-9b0371276',
           github: 'https://github.com/debadutta1209',
           instagram: '',
+        },
+      },
+      {
+        id: 4,
+        name: 'Suman Sekhar Mohanty',
+        role: 'Tech',
+        imageUrl: '/images/crew/suman.jpg',
+        quote:
+          'Designed the official TEDxVSSUT 2025 website, focusing on modern UI/UX and a seamless event experience.',
+        social: {
+          facebook: '',
+          twitter: '',
+          linkedin:
+            'https://www.linkedin.com/in/suman-sekhar-mohanty-a16b54291/',
+          github: 'https://github.com/Suman-Sekhar-003',
+          instagram:
+            'https://www.instagram.com/_sekhar_suman__?igsh=MTVybzhldjRzNnlqNQ==',
         },
       },
     ],
