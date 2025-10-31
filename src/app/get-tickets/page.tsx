@@ -42,6 +42,11 @@ const Index = () => {
     <div className="flex justify-center bg-[#000000] min-h-screen py-20">
       <div className="pt-10 flex flex-col gap-8 items-center px-6 md:px-0 w-full max-w-4xl">
         <h1 className="text-5xl text-[#E62B1E] text-center font-bold">
+          Passes booking is now over...
+        </h1>
+
+        <p>See you in next edition of TEDxVSSUT!</p>
+        {/* <h1 className="text-5xl text-[#E62B1E] text-center font-bold">
           Book Your Passes Now!
         </h1>
 
@@ -90,7 +95,7 @@ const Index = () => {
         </p>
 
         {/* Ticket Options */}
-        <div className="w-full grid md:grid-cols-3 gap-8">
+        {/* <div className="w-full grid md:grid-cols-3 gap-8">
           {ticketOptions.map((ticket, index) => (
             <div
               key={index}
@@ -117,8 +122,8 @@ const Index = () => {
           ))}
         </div>
         {/* Policy Links */}
-        <PolicyLinks />
-        <p className="text-justify">NOTE: Any queries previously sent to help.tedxvssut@gmail.com, please re-send to ecellvssut.tech@gmail.com</p>
+        {/* <PolicyLinks />
+        <p className="text-justify">NOTE: Any queries previously sent to help.tedxvssut@gmail.com, please re-send to ecellvssut.tech@gmail.com</p> */}
       </div>
     </div>
   );
