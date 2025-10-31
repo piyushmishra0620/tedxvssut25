@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "./Timer.css"; // Import Tailwind and custom styles for Aldrich font
 
-const targetDate = new Date("2025-11-01T00:00:00");
+const targetDate = new Date("2025-11-01T00:09:30");
 
 const Timer = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
