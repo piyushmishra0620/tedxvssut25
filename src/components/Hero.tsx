@@ -108,7 +108,8 @@ const Hero = () => {
           className='w-screen flex justify-center absolute z-40 left-[50%] -translate-x-[50%] -translate-y-[50%] top-[50%]'
           style={{ opacity: timerOpacity }}
         >
-          <AnimatedTimer />
+          {/* <AnimatedTimer /> */}
+          <h1 className='text-6xl md:text-9xl uppercase font-bold text-center'>Live Now!</h1>
         </motion.div>
         
         {/* <motion.div
