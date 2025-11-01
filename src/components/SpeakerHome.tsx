@@ -47,7 +47,7 @@ const speakers = [
     title: 'Scientist',
     imageUrl: '/speaker_image/bkdas sir.jpeg',
     bio: 'Director General, ECS, DRDO',
-    Talklink: "jfdkajfl"
+    Talklink: ""
   },
   {
     id: 5,
