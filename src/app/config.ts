@@ -75,6 +75,23 @@ const config = {
             'https://www.instagram.com/bismitaaswain?igsh=ZjZxY3hveHFycHpu',
         },
       },
+      {
+        id: 5,
+        name: 'Suman Sekhar Mohanty',
+        role: 'Design',
+        imageUrl: '/images/crew/suman.jpg',
+        quote:
+          'Designed the official TEDxVSSUT 2025 website, focusing on modern UI/UX and a seamless event experience.',
+        social: {
+          facebook: '',
+          twitter: '',
+          linkedin:
+            'https://www.linkedin.com/in/suman-sekhar-mohanty-a16b54291/',
+          github: 'https://github.com/Suman-Sekhar-003',
+          instagram:
+            'https://www.instagram.com/_sekhar_suman__?igsh=MTVybzhldjRzNnlqNQ==',
+        },
+      },
     ],
     social_media: [
       {
@@ -193,6 +210,22 @@ const config = {
           instagram: '',
         },
       },
+      {
+        id: 8,
+        name: 'Amrut Sharma',
+        role: 'Social Media',
+        imageUrl: '/images/crew/amrut.jpg',
+        quote: 
+          'As part of the Social Media team, I craft digital stories that reflect our vision. From posts to partnerships, I focus on turning ideas into conversations that travel far beyond the screen.',
+        social: {
+          facebook: '',
+          twitter: '',
+          linkedin:
+            'https://www.linkedin.com/in/amrut-sharma-7731a2314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+          github: '',
+          instagram: 'https://www.instagram.com/_.amrut18._?igsh=MTFwNTMwZTBrM2VtdA%3D%3D&utm_source=qr',
+        },
+      }
     ],
     organizers: [
       {
@@ -213,23 +246,40 @@ const config = {
             'https://www.instagram.com/_vibhu_26?igsh=OGlnajBvaDhqYTk%3D&utm_source=qr',
         },
       },
-      {
+      /*{
         id: 2,
-        name: 'Shreyansh Agrawal',
-        role: 'Co-Organizer',
-        imageUrl: '/images/crew/shreyansh.jpg',
+        name: 'Soumya Ranjan',
+        role: 'Co-organizer',
+        imageUrl: '/images/crew/soumya.jpg',
         quote:
-          'As a Co-Organiser, I helped shape the event’s vision, coordinated teams, and ensured a seamless and impactful TEDx experience.',
+          'As a part of the Social Media and Sponsorship team, I focus on building our brand presence online while forming meaningful collaborations.',
         social: {
           facebook: '',
           twitter: '',
           linkedin:
-            'https://www.linkedin.com/in/shreyansh-agrawal-8274aa2b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+            'https://www.linkedin.com/in/soumya-ranjan-mohapatra-b4a23b317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
           github: '',
           instagram:
-            'https://www.instagram.com/_lone_wolf_122?igsh=bXZlb3g5a3U4MXVp',
+            'https://www.instagram.com/soumya.__09?igsh=dXc5bWRnbTJveDN0',
         },
-      },
+      },*/
+      // {
+      //   id: 2,
+      //   name: 'Shreyansh Agrawal',
+      //   role: 'Co-Organizer',
+      //   imageUrl: '/images/crew/shreyansh.jpg',
+      //   quote:
+      //     'As a Co-Organiser, I helped shape the event’s vision, coordinated teams, and ensured a seamless and impactful TEDx experience.',
+      //   social: {
+      //     facebook: '',
+      //     twitter: '',
+      //     linkedin:
+      //       'https://www.linkedin.com/in/shreyansh-agrawal-8274aa2b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      //     github: '',
+      //     instagram:
+      //       'https://www.instagram.com/_lone_wolf_122?igsh=bXZlb3g5a3U4MXVp',
+      //   },
+      // },
     ],
     'marketing_&_sponsorship': [
       {
@@ -777,6 +827,23 @@ const config = {
           linkedin: 'http://linkedin.com/in/debadutta-patra-9b0371276',
           github: 'https://github.com/debadutta1209',
           instagram: '',
+        },
+      },
+      {
+        id: 4,
+        name: 'Suman Sekhar Mohanty',
+        role: 'Tech',
+        imageUrl: '/images/crew/suman.jpg',
+        quote:
+          'Designed the official TEDxVSSUT 2025 website, focusing on modern UI/UX and a seamless event experience.',
+        social: {
+          facebook: '',
+          twitter: '',
+          linkedin:
+            'https://www.linkedin.com/in/suman-sekhar-mohanty-a16b54291/',
+          github: 'https://github.com/Suman-Sekhar-003',
+          instagram:
+            'https://www.instagram.com/_sekhar_suman__?igsh=MTVybzhldjRzNnlqNQ==',
         },
       },
     ],
