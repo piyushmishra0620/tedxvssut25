@@ -64,8 +64,6 @@ const speakers = [
     imageUrl: '/speaker_image/chandan malu.jpeg',
     bio: 'Principle Technology Architect Infosys',
     Talklink:""
-    bio: 'Principle Technology Architect Infosys',
-    Talklink:""
   },
   {
     id: 7,
