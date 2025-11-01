@@ -47,7 +47,7 @@ const speakers = [
     title: 'Scientist',
     imageUrl: '/speaker_image/bkdas sir.jpeg',
     bio: 'Director General, ECS, DRDO',
-    Talklink: "jfdkajfl"
+    Talklink: ""
   },
   {
     id: 5,
@@ -62,8 +62,6 @@ const speakers = [
     name: 'Chandan Malu',
     title: 'Technology',
     imageUrl: '/speaker_image/chandan malu.jpeg',
-    bio: 'Principle Technology Architect Infosys',
-    Talklink:""
     bio: 'Principle Technology Architect Infosys',
     Talklink:""
   },
@@ -181,7 +179,7 @@ const SpeakersSection = () => {
                         <p className="text-[15px]  mt-4 px-4 text-center opacity-90 z-[30]">
                           {speaker.bio}
                         </p>
-                        {speaker.Talklink?(<><h5 className="mt-[45px] text-center text-white font-semibold text-[20px]"> Watch TEDTalk </h5><div className="mt-[10px] w-full h-fit flex justify-center pointer-events-auto z-[30]"><a title={speaker.title} href={speaker.Talklink} target="_blank" className="p-2 bg-transparent text-white border-3 border-white rounded-full cursor-pointer"><LinkIcon size={19} strokeWidth={4}/></a></div></>):""}
+                        {speaker.Talklink?(<><h5 className="mt-[45px] text-center text-white font-semibold text-[20px] cursor-default"> Watch TEDTalk </h5><div className="mt-[10px] w-full h-fit flex justify-center pointer-events-auto z-[30]"><a title={speaker.title} href={speaker.Talklink} target="_blank" className="p-2 bg-transparent text-white border-3 border-white rounded-full cursor-pointer"><LinkIcon size={19} strokeWidth={4}/></a></div></>):""}
                         <div className="absolute bottom-0 right-0 w-full h-full flex flex-row justify-end items-end z-[10]">
                           <div className="bg-radial-[at_0%_0%] from-red-600 to-red-700 rounded-full p-[125px] blur-[150px]"></div>
                         </div>
