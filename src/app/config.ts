@@ -246,7 +246,7 @@ const config = {
             'https://www.instagram.com/_vibhu_26?igsh=OGlnajBvaDhqYTk%3D&utm_source=qr',
         },
       },
-      /*{
+      {
         id: 2,
         name: 'Soumya Ranjan',
         role: 'Co-organizer',
@@ -262,7 +262,7 @@ const config = {
           instagram:
             'https://www.instagram.com/soumya.__09?igsh=dXc5bWRnbTJveDN0',
         },
-      },*/
+      },
       // {
       //   id: 2,
       //   name: 'Shreyansh Agrawal',
